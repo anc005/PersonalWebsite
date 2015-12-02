@@ -135,7 +135,8 @@ svg{
 #Title{
     background-color: white;
 	padding:25px;
-	font-size: 7vw;
+	/*font-size: 7vw;*/
+    font-size: 100px;
 	text-align: center;
 }
 .P1, .P2, .P3, .P4{
@@ -171,8 +172,10 @@ svg{
     font-size: 30px;
     content: "Online flashcard database used to study and compete amongst peers.";
 }
+
 /*****************CONTACT ME*******************/
 .Contact_Me{
+    margin-top: 50px;
 	height:400px;
     font-size: 40px;
 }
@@ -232,6 +235,9 @@ input:focus, textarea:focus {
     }
     .Contact_Me{
         margin-top: 58px;
+    }
+    #Title{
+        font-size: 50px;
     }
 
 }
