@@ -1,3 +1,14 @@
+/**************Highlighting text**********************/
+*::selection {
+  background: red; /* WebKit/Blink Browsers */
+  color: white;
+
+}
+*::-moz-selection {
+  background: black; /* Gecko Browsers */
+  color: white;
+}
+
 body{
 	margin:auto;
 	font-family: 'Josefin Sans', sans-serif;
