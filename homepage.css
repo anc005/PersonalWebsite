@@ -535,6 +535,7 @@ nav > ul > li > a:hover {
 .Navigation{
     height:100%;
     display:visible;
+    opacity: 1;
 }
 .menu-btn {
   /*  display:none;*/
