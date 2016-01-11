@@ -585,6 +585,7 @@ nav > ul > li > a:hover {
 @media all and (max-width: 750px){
     .Navigation{
         opacity:1;
+        position: fixed;
     }
 body {
     width:100%;
