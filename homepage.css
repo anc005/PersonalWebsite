@@ -300,6 +300,7 @@ input:focus, textarea:focus {
 }
 .Content-Nav{
     margin-top: 125px;
+    /*padding-top: 100px;*/
 }
 
 button > a {
@@ -525,6 +526,7 @@ nav > ul > li > a:hover {
 */
 .Navigation{
     height:100%;
+    opacity: 1;
 }
 .menu-btn {
   /*  display:none;*/
