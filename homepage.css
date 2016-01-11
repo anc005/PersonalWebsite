@@ -548,9 +548,9 @@ nav > ul > li > a:hover {
 }
 /*(min-width: 415px) and */
 @media (max-width: 750px){
-/*body {
+body {
     width:100%;
-}*/
+}
 
 .menu-btn {
     display:flex;
