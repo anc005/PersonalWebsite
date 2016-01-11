@@ -304,7 +304,7 @@ input:focus, textarea:focus {
 }
 
 button > a {
-    text-decoration:none
+    text-decoration:none;
 }
 
 /*#contact-bar {
@@ -498,11 +498,11 @@ nav > ul > li > a:hover {
     -ms-align-items:center;
     -moz-align-items:center;
     align-items:center;
-    width:100%
+    width:100%;
 }
 
 #contact-bar > ul {
-    padding:.5em 0
+    padding:.5em 0;
 }
 
 #contact-bar > ul > li {
@@ -514,7 +514,7 @@ nav > ul > li > a:hover {
     display:-webkit-box;
     display:-moz-box;
     display:-ms-flexbox;
-    display:-webkit-flex
+    display:-webkit-flex;
 }
   
 }
@@ -524,12 +524,7 @@ nav > ul > li > a:hover {
     width:100%;
 }
 */
-.sticky{
-        -webkit-transition: all 0s; 
-    -moz-transition: all 0s; 
-    -o-transition: all 0s; 
-    transition: all 0s;
-}
+
 .Navigation{
     height:100%;
     opacity: 1;
