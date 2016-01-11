@@ -14,9 +14,7 @@ $(document).ready(function () {
                 right: "0px"
             }); 
         } else {
-            popout.animate({
-                right: -popoutWidth
-            }, 250);    
+            popout.animate({right: -popoutWidth}, 250);    
         }
     });
   
@@ -32,9 +30,7 @@ $(document).ready(function () {
                 right: "0px"
             }); 
         } else {
-            popout.animate({
-                right: -popoutWidth
-            }, 250);    
+            popout.animate({right: - popoutWidth}, 250);    
         }
   });
 });

@@ -1,4 +1,4 @@
-/**************Highlighting text**********************/
+/********************Highlighting text***********************/
 *::selection {
   background: red; /* WebKit/Blink Browsers */
   color: white;
@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 
-/******Introduction Page******/
+/**********************Introduction Page*********************/
 .Intro{
 	background-color: #333333;
 }
@@ -46,7 +46,7 @@ svg{
     }
 }
 
-/************ABOUT*************/
+/***************************ABOUT***************************/
 .About{
 	height:600px;
     background-color: #066AFF;
@@ -139,7 +139,7 @@ svg{
 
 }
 
-/***********************PROJECTS**********************/
+/******************************PROJECTS****************************/
 .Projects{
 	height:720px;
 }
@@ -184,7 +184,7 @@ svg{
     content: "Online flashcard database used to study and compete amongst peers.";
 }
 
-/*****************CONTACT ME*******************/
+/*********************************CONTACT ME******************************/
 .Contact_Me{
     margin-top: 50px;
 	height:400px;
@@ -253,7 +253,7 @@ input:focus, textarea:focus {
 
 }
 
-/******Navigation Bar********/
+/*********************Navigation Bar************************/
 .Navigation{
     opacity:0;
 }
@@ -275,13 +275,11 @@ input:focus, textarea:focus {
     margin-top: 125px;
 }
 
-
-
 button > a {
     text-decoration:none
 }
 
-#contact-bar {
+/*#contact-bar {
     display:flex;
     display:-webkit-box;
     display:-moz-box;
@@ -293,9 +291,9 @@ button > a {
     padding:.65em 0;
     background:#fff;
     font-family:'Lato',sans-serif
-}
+}*/
 
-.login {
+/*.login {
     display:flex;
     display:-webkit-box;
     display:-moz-box;
@@ -303,9 +301,9 @@ button > a {
     display:-webkit-flex;
     justify-content:flex-start;
     padding-left:1em;
-}
+}*/
 
-#contact-bar > ul {
+/*#contact-bar > ul {
     display:flex;
     display:-webkit-box;
     display:-moz-box;
@@ -329,7 +327,7 @@ button > a {
 
 #contact-bar > li:last-child {
     padding-right:2em;
-}
+}*/
 
 header {
     display:flex;
@@ -360,7 +358,7 @@ header {
     padding:1em 2em;
     color:#fff;
     font-size:1.5em;
-    cursor:pointer
+    cursor:pointer;
 }
 
 #mobile-menu {
@@ -377,6 +375,7 @@ header {
 }
 
 #mobile-menu > ul {
+    width:100%;
     -webkit-flex-flow: column; 
     -mos-flex-flow: column; 
     flex-flow: column;
@@ -384,17 +383,21 @@ header {
     padding: 2em 0;
 }
 
-
-
-#mobile-menu > ul > li {
+#mobile-menu > ul > a > li {
     list-style-type:none;
-    padding:1.1em 2em
+    /*padding:1.1em 2em;*/
+    padding:10%;
+    font-size: 5vh;
 }
-#mobile-menu > ul > li > a:hover {
+#mobile-menu > ul > a > li:hover{
+    background: rgba(0, 0, 0, 0.5); 
     color: #066AFF;
-}
+}   
+/*#mobile-menu > ul > li > a:hover {
+    color: #066AFF;
+}*/
 
-#mobile-menu > ul > li > a {
+#mobile-menu > ul > a /*li > a*/ {
     color:#fff;
     text-decoration:none
 }
@@ -434,7 +437,7 @@ nav > ul > li {
 }
 
 nav > ul > li:last-child {
-    padding-right:0
+    padding-right:0;
 }
 
 nav > ul > li > a {
@@ -447,11 +450,11 @@ nav > ul > li > a:hover {
 }
 
 .menu-btn {
-    display:none
+    display:none;
 }
 
 #mobile-menu {
-    display:none
+    display:none;
 }
 
 #contact-bar {
@@ -486,20 +489,91 @@ nav > ul > li > a:hover {
   
 }
 
-@media (min-width: 894px) and (max-width: 1020px) {
-body {
-    width:100%
+@media (min-width: 415px) and (max-width: 700px){
+/*body {
+    width:100%;
 }
-
+*/
 .menu-btn {
-    display:none
+  /*  display:none;*/
 }
 
 #mobile-menu {
-    display:none
+   /* display:none;*/
 }
 
 #contact-bar {
+/*    display:flex;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    height:auto;
+    -webkit-align-items:center;
+    -ms-align-items:center;
+    -moz-align-items:center;
+    align-items:center;
+    width:100%;*/
+}
+/*
+#contact-bar > ul {
+    padding:.5em 0;
+}
+
+#contact-bar > ul > li {
+    padding:.5em;
+}*/
+
+/*.desktop {
+    display:flex;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}*/
+
+
+}
+
+
+
+@media (min-width: 415px) and (max-width: 750px){
+body {
+    width:100%;
+}
+
+.menu-btn {
+    display:flex;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+
+#mobile-menu {
+    display:flex;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+
+#contact-bar {
+/*    display:flex;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    justify-content:space-around;
+    height:auto;
+    -webkit-align-items:center;
+    -ms-align-items:center;
+    -moz-align-items:center;
+    align-items:center;*/
     display:flex;
     display:-webkit-box;
     display:-moz-box;
@@ -510,33 +584,23 @@ body {
     -ms-align-items:center;
     -moz-align-items:center;
     align-items:center;
-    width:100%
+    width:100%;
 }
 
 #contact-bar > ul {
-    padding:.5em 0
+    padding:.5em 0;
 }
 
 #contact-bar > ul > li {
-    padding:.5em
+    padding:.5em;
 }
 
 .desktop {
-    display:flex;
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
+    display:none;
 }
 
-
 }
-
-@media (min-width: 570px) and (max-width: 893px) {
+/*@media (min-width: 570px) and (max-width: 893px) {
   
 body {
     width:100%
@@ -578,57 +642,8 @@ body {
     display:-ms-flexbox;
     display:-webkit-flex;
 }
-}
-
-@media (min-width: 415px) and (max-width: 569px) {
-body {
-    width:100%
-}
-
-.menu-btn {
-    display:flex;
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-}
-
-#mobile-menu {
-    display:flex;
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-}
-
-#contact-bar {
-    display:flex;
-    display:-webkit-box;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-    justify-content:space-around;
-    height:auto;
-    -webkit-align-items:center;
-    -ms-align-items:center;
-    -moz-align-items:center;
-    align-items:center;
-}
-
-#contact-bar > ul {
-    padding:.5em 0;
-}
-
-#contact-bar > ul > li {
-    padding:.5em;
-}
-
-.desktop {
-    display:none;
-}
-
-}
-
+}*/
+/*
 @media (min-width: 375px) and (max-width: 414px) {
 body {
     width:100%;
@@ -742,7 +757,7 @@ body {
 .desktop {
     display:none;
 }
-}
+}*/
 /***************Credentials**********************/
 .Credentials{
     margin-top: 345px;
