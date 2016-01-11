@@ -529,13 +529,10 @@ nav > ul > li > a:hover {
     -moz-transition: none; 
     -o-transition: none; 
     transition: none;
-    opacity: 1;
-    display: visible;
 }
 .Navigation{
     height:100%;
     display:visible;
-    opacity: 1;
 }
 .menu-btn {
   /*  display:none;*/
@@ -596,17 +593,11 @@ nav > ul > li > a:hover {
 }
 /*(min-width: 415px) and */
 @media all and (max-width: 750px){
-    .Navigation{
-            display: visible;
-    opacity: 1;
-    }
-    .sticky{
+.sticky{
     -webkit-transition: none; 
     -moz-transition: none; 
     -o-transition: none; 
     transition: none;
-    opacity: 1;
-    display: visible;
 }
 body {
     width:100%;
