@@ -23,6 +23,7 @@ a{
 /**********************Introduction Page*********************/
 .Intro{
 	background-color: #333333;
+    height:100%;
 }
 svg{
 	width:90%;
