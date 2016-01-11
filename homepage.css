@@ -595,6 +595,10 @@ nav > ul > li > a:hover {
 }
 /*(min-width: 415px) and */
 @media all and (max-width: 750px){
+    .Navigation{
+            display: visible;
+    opacity: 1;
+    }
     .sticky{
     -webkit-transition: none; 
     -moz-transition: none; 
