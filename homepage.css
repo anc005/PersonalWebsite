@@ -524,9 +524,17 @@ nav > ul > li > a:hover {
     width:100%;
 }
 */
-
+.sticky{
+    -webkit-transition: none; 
+    -moz-transition: none; 
+    -o-transition: none; 
+    transition: none;
+    opacity: 1;
+    display: visible;
+}
 .Navigation{
     height:100%;
+    display:visible;
 }
 .menu-btn {
   /*  display:none;*/
@@ -534,7 +542,12 @@ nav > ul > li > a:hover {
 
 #mobile-menu {
    /* display:none;*/
+    -webkit-transition: none; 
+    -moz-transition: none; 
+    -o-transition: none; 
+    transition: none;
    display: visible;
+   opacity: 1;
 }
 
 #contact-bar {
@@ -582,6 +595,14 @@ nav > ul > li > a:hover {
 }
 /*(min-width: 415px) and */
 @media all and (max-width: 750px){
+    .sticky{
+    -webkit-transition: none; 
+    -moz-transition: none; 
+    -o-transition: none; 
+    transition: none;
+    opacity: 1;
+    display: visible;
+}
 body {
     width:100%;
 }
@@ -596,6 +617,7 @@ body {
 
 #mobile-menu {
     display: visible;
+    opacity: 1;
     height:100%;
     display:flex;
     display:-webkit-box;
