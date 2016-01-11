@@ -482,11 +482,11 @@ nav > ul > li > a:hover {
 .menu-btn {
     display:none;
 }
-
+/*
 #mobile-menu {
     display:none;
 }
-
+*/
 #contact-bar {
     display:flex;
     display:-webkit-box;
@@ -581,7 +581,7 @@ nav > ul > li > a:hover {
   }
 }
 /*(min-width: 415px) and */
-@media (max-width: 750px){
+@media all and (max-width: 750px){
     .Navigation{
         opacity:1;
     }
