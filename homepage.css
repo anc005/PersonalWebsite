@@ -10,10 +10,11 @@
 }
 
 body{
-	margin:auto;
+	margin:0;
 	font-family: 'Josefin Sans', sans-serif;
 /*    background-color: white;
 */    background-color: #333333;
+width:100%;
 }
 a{
     text-decoration: none;
@@ -49,25 +50,31 @@ svg{
 /***************************ABOUT***************************/
 .About{
     height:100%;
-    min-height: 600px;
+    min-height: 900px;
+    width: calc(100% - 60px);
 	/*height:600px;*/
     background-color: #066AFF;
-    padding:20px;
+    padding:30px;
 }
-.Profile{
+/*.Profile{
 	margin-left:50%;
 	height:100%;
-}
+}*/
 .Profile > img{
-	margin-top:150px;
-	margin-left: calc(50% - 140px);
-	width:280px;
+/*	margin-top:150px;
+*/	margin-left: calc(50% - 140px);
+padding-bottom: 50px;
+padding-top: 50px;
+	/*width:280px;*/
+    width:30%;
 }
 .Resume_Button{
-    margin-top: 30px;
-	color:white;
-	margin-left: 10%;
-	width:78%;
+/*    margin-top: 30px;
+*/	color:white;
+	/*margin-left: 10%;*/
+    margin-left:27%;
+	/*width:78%;*/
+    width:50%;
 	padding:3px;
 	border-style: solid;
 	border-color: white;
@@ -82,59 +89,66 @@ svg{
     color:#333333;
 }
 .Goal{
-    margin-left:0px;
-    margin-top: -450px;
+/*    margin-left:0px;
+    margin-top: -450px;*/
     font-size:40px;
     padding:40px;
     text-align: center;
-    width:45%;
+    padding-top: 100px;
+    /*width:45%;*/
+  /*  width:100%;*/
     color:white;
 }
 .Education{
     color:white;
-    margin-left:0px;
+/*    margin-left:0px;*/
 	font-size: 30px;
 	padding:40px;	
-    width:45%;
+   /* width:45%;*/
+ /*  width:100%;*/
     text-align: center;
 }
 
 
 @media screen and (max-width: 700px) {
     .About{
-        height: calc(100% + 500px);/*1200px;*/
+        height: calc(100% + 500px);
+        min-height: 1050px;
         padding:0px;
         width:100%;
     }
-    .Profile{
+/*    .Profile{
         margin-left:0px;
         width:100%;
         background-color: none;
-    }
+    }*/
     .Profile > img{
         width:74%;
-        padding:0px;
-        margin-top:400px;
+/*        padding:0px;
+*/       /* margin-top:400px;*/
         margin-left: 13%;
+        padding-top: 50px;
+        padding-bottom:50px;
+        padding-left: 0px;
+        padding-right: 0px;
     } 
     .Education{
-        width:100%;
-        margin-top: calc(80% + 180px);
         font-size: 30px;
         padding-left: 0px;
-        padding-top: 0px;
+        padding-top: 100px;
         padding-right: 0px;
         padding-bottom: 100px;
     }
     .Goal{
         width:90%;
         padding:5%;
-        margin-top: -1000px;
         font-size: 40px;
+        padding-top:110px;
+        padding-bottom:50px;
     }
     .Resume_Button{
-        margin-top:20px;
-        margin-left: calc(5% - 5px);
+/*        margin-top:20px;
+*/        margin-left: calc(5% - 5px);
         padding:0px;
         width:90%;
     }
@@ -143,7 +157,9 @@ svg{
 
 /******************************PROJECTS****************************/
 .Projects{
-	height:720px;
+	/*height:720px;*/
+     height:100%;
+    min-height: 720px;
 }
 #Title{
     background-color: white;
