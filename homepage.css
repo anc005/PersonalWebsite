@@ -63,17 +63,24 @@ svg{
 }*/
 .Profile > img{
 /*	margin-top:150px;
-*/	margin-left: calc(50% - 140px);
+*/	/*margin-left: calc(50% - 140px);*/
 padding-bottom: 50px;
 padding-top: 50px;
+/*display: block;*/
 	/*width:280px;*/
     width:40%;
+    max-width: 400px;
+  display:block;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
 }
 .Resume_Button{
 /*    margin-top: 30px;
 */	color:white;
 	/*margin-left: 10%;*/
-    margin-left:27%;
+    margin-left:25%;
 	/*width:78%;*/
     width:50%;
 	padding:3px;
@@ -95,7 +102,7 @@ padding-top: 50px;
     font-size:40px;
     padding:40px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
     /*width:45%;*/
   /*  width:100%;*/
     color:white;
