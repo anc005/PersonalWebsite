@@ -546,6 +546,8 @@ nav > ul > li > a:hover {
     transition: none;
    display: visible;
    opacity: 1;
+   position: absolute;
+   top:0px;
 }
 
 #contact-bar {
@@ -602,7 +604,16 @@ nav > ul > li > a:hover {
 body {
     width:100%;
 }
-
+.Navigation{
+        width: 100%;
+    left: 0;
+    z-index: 100;
+    border-top: 0;
+       display: visible;
+   opacity: 1;
+   position: fixed;
+   top:0px;
+}
 .menu-btn {
     display:flex;
     display:-webkit-box;
