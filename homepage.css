@@ -291,10 +291,10 @@ input:focus, textarea:focus {
     top: 0;
     z-index: 100;
     border-top: 0;
-/*    -webkit-transition: all .5s; 
+    -webkit-transition: all .5s; 
     -moz-transition: all .5s; 
     -o-transition: all .5s; 
-    transition: all .5s;*/
+    transition: all .5s;
     opacity:1;
 
 }
@@ -527,7 +527,6 @@ nav > ul > li > a:hover {
 
 .Navigation{
     height:100%;
-    opacity: 1;
 }
 .menu-btn {
   /*  display:none;*/
@@ -583,10 +582,6 @@ nav > ul > li > a:hover {
 }
 /*(min-width: 415px) and */
 @media all and (max-width: 750px){
-    .Navigation{
-        opacity:1;
-        position: fixed;
-    }
 body {
     width:100%;
 }
