@@ -524,6 +524,12 @@ nav > ul > li > a:hover {
     width:100%;
 }
 */
+.sticky{
+        -webkit-transition: all 0s; 
+    -moz-transition: all 0s; 
+    -o-transition: all 0s; 
+    transition: all 0s;
+}
 .Navigation{
     height:100%;
     opacity: 1;
