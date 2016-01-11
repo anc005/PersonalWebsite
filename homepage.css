@@ -48,7 +48,9 @@ svg{
 
 /***************************ABOUT***************************/
 .About{
-	height:600px;
+    height:100%;
+    min-height: 600px;
+	/*height:600px;*/
     background-color: #066AFF;
     padding:20px;
 }
