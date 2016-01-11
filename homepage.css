@@ -534,6 +534,7 @@ nav > ul > li > a:hover {
 
 #mobile-menu {
    /* display:none;*/
+   display: visible;
 }
 
 #contact-bar {
