@@ -597,6 +597,7 @@ body {
 }
 
 #mobile-menu {
+    display: visible;
     height:100%;
     display:flex;
     display:-webkit-box;
