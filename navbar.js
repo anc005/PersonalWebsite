@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.menu-btn').on('click', function(event){
-        event.preventDefault();
+       
         // create menu variables
         var popout = $('#mobile-menu');
         var popoutWidth = $('#mobile-menu').width();
@@ -13,13 +13,19 @@ $(document).ready(function () {
             popout.animate({
                 right: "0px"
             }); 
-        } else {
+            // popout.show();
+            popout.fadeIn(150);
+        // popout.animate({opacity: 1}, 1000);
+
+        } 
+        else {
             popout.animate({right: -popoutWidth}, 250);    
         }
+         event.preventDefault();
     });
   
   $('.close-btn').on('click', function(event){
-    event.preventDefault();
+    
     var popout = $('#mobile-menu');
     var popoutWidth = $('#mobile-menu').width();
     
@@ -29,9 +35,15 @@ $(document).ready(function () {
             popout.animate({
                 right: "0px"
             }); 
-        } else {
-            popout.animate({right: - popoutWidth}, 250);    
+
+        } 
+        else {
+            // popout.animate({opacity: 0.0}, 5000, 'linear', callback);
+            // popout.animate({right: -popoutWidth}, 250);    
+            popout.fadeOut(150);
+            // popout.hide();
         }
+        event.preventDefault();
   });
 });
 
