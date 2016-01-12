@@ -10,16 +10,18 @@ $(document).ready(function () {
         
         // slide menu
         if (popout.hasClass("open")) {
+
+            // popout.show();
+            popout.fadeIn(150);
             popout.animate({
                 right: "0px"
             }); 
-            // popout.show();
-            popout.fadeIn(150);
         // popout.animate({opacity: 1}, 1000);
 
         } 
         else {
             popout.animate({right: -popoutWidth}, 250);    
+            popout.fadeOut(150);
         }
          event.preventDefault();
     });
@@ -35,11 +37,11 @@ $(document).ready(function () {
             popout.animate({
                 right: "0px"
             }); 
-
+        popout.fadeOut(150);
         } 
         else {
             // popout.animate({opacity: 0.0}, 5000, 'linear', callback);
-            // popout.animate({right: -popoutWidth}, 250);    
+            popout.animate({right: -popoutWidth}, 250);    
             popout.fadeOut(150);
             // popout.hide();
         }
