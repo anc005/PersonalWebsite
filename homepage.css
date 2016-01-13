@@ -292,7 +292,7 @@ header {
     -ms-align-items:center;
     -moz-align-items:center;
     align-items:center;
-    background-color: rgba(0, 0, 0, 1); 
+    background-color: rgba(0, 0, 0, .8); 
     padding:1.5em 0;
 }
 header:hover{
