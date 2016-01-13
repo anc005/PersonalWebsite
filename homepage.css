@@ -292,7 +292,7 @@ header {
     -ms-align-items:center;
     -moz-align-items:center;
     align-items:center;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 1); 
     padding:1.5em 0;
 }
 header:hover{
@@ -300,7 +300,7 @@ header:hover{
     -moz-transition: all .5s; 
     -o-transition: all .5s; 
     transition: all .5s;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 1); 
 }
 
 #logo {
