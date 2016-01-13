@@ -42,13 +42,13 @@ $(document).ready(function () {
 });
     $("#PDeskMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ProjectLink").offset().top - 125
+        scrollTop: $("#ProjectLink").offset().top - 88
     }, 870);
     event.preventDefault();
 });
       $("#CDeskMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ContactLink").offset().top - 75
+        scrollTop: $("#ContactLink").offset().top - 38
     }, 870);
     event.preventDefault();
 });
@@ -56,19 +56,19 @@ $(document).ready(function () {
       // Scroll for Mobile Menu
   $("#AMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#AboutLink").offset().top - 125
+        scrollTop: $("#AboutLink").offset().top - 88
     }, 870);
     event.preventDefault();
 });
     $("#PMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ProjectLink").offset().top - 125
+        scrollTop: $("#ProjectLink").offset().top - 88
     }, 870);
     event.preventDefault();
 });
       $("#CMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ContactLink").offset().top - 70
+        scrollTop: $("#ContactLink").offset().top - 33
     }, 870);
     event.preventDefault();
 });

@@ -38,7 +38,7 @@ svg{
 
 }
 #logo > img{
-	width:100px;
+	width:80px;
 }
 @media screen and (min-width: 700px) {
     .Name_Title{
@@ -111,7 +111,7 @@ svg{
     }
 
     .Profile > img{
-        width:74%;
+        width:78%;
     } 
     .Education{
         font-size: 30px;
@@ -271,7 +271,7 @@ input:focus, textarea:focus {
 
 }
 .Content-Nav{
-    margin-top: 125px;
+    margin-top: 85px;
 }
 
 button > a {
@@ -280,6 +280,7 @@ button > a {
 
 
 header {
+    height:40px;
     display:flex;
     display:-webkit-box;
     display:-moz-box;
