@@ -27,21 +27,28 @@ $(document).ready(function () {
          // event.preventDefault();
     });
     // Scroll for Desktop Menu
+      $("#logo").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Entrance").offset().top 
+    }, 870);
+    event.preventDefault(); //Prevents page from flashing
+});
+
   $("#ADeskMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#AboutLink").offset().top
+        scrollTop: $("#AboutLink").offset().top + 1
     }, 870);
     event.preventDefault(); //Prevents page from flashing
 });
     $("#PDeskMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ProjectLink").offset().top
+        scrollTop: $("#ProjectLink").offset().top - 125
     }, 870);
     event.preventDefault();
 });
       $("#CDeskMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ContactLink").offset().top
+        scrollTop: $("#ContactLink").offset().top - 75
     }, 870);
     event.preventDefault();
 });
@@ -49,19 +56,19 @@ $(document).ready(function () {
       // Scroll for Mobile Menu
   $("#AMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#AboutLink").offset().top
+        scrollTop: $("#AboutLink").offset().top - 125
     }, 870);
     event.preventDefault();
 });
     $("#PMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ProjectLink").offset().top
+        scrollTop: $("#ProjectLink").offset().top - 125
     }, 870);
     event.preventDefault();
 });
       $("#CMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ContactLink").offset().top
+        scrollTop: $("#ContactLink").offset().top - 70
     }, 870);
     event.preventDefault();
 });

@@ -250,6 +250,9 @@ input:focus, textarea:focus {
 }
 
 /*********************Navigation Bar************************/
+#Active{ /***Made for potentially showing which active menu status you are on ***/
+    color:#066AFF;
+}
 .Navigation{
     opacity:0;
 }
