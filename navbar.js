@@ -9,7 +9,7 @@ $(document).ready(function () {
         popout.addClass("open");
         
         // slide menu
-        if (popout.hasClass("open")) {
+        // if (popout.hasClass("open")) {
 
             // popout.show();
             popout.fadeIn(150);
@@ -18,34 +18,70 @@ $(document).ready(function () {
             }); 
         // popout.animate({opacity: 1}, 1000);
 
-        } 
-        else {
-            popout.animate({right: -popoutWidth}, 250);    
-            popout.fadeOut(150);
-        }
+        // } 
+        // else {
+        //     popout.animate({right: -popoutWidth}, 250);    
+        //     popout.fadeOut(150);
+        // }
 
-         event.preventDefault();
+         // event.preventDefault();
     });
-  
-  $('.close-btn').on('click', function(event){
-    
+    // Scroll for Desktop Menu
+  $("#ADeskMenu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#AboutLink").offset().top
+    }, 870);
+    event.preventDefault(); //Prevents page from flashing
+});
+    $("#PDeskMenu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#ProjectLink").offset().top
+    }, 870);
+    event.preventDefault();
+});
+      $("#CDeskMenu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#ContactLink").offset().top
+    }, 870);
+    event.preventDefault();
+});
+
+      // Scroll for Mobile Menu
+  $("#AMenu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#AboutLink").offset().top
+    }, 870);
+    event.preventDefault();
+});
+    $("#PMenu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#ProjectLink").offset().top
+    }, 870);
+    event.preventDefault();
+});
+      $("#CMenu").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#ContactLink").offset().top
+    }, 870);
+    event.preventDefault();
+});
+
+  $(".close-btn").on('click', function(event){
     var popout = $('#mobile-menu');
     var popoutWidth = $('#mobile-menu').width();
-    
-    popout.removeClass("open")
-    
-    if (popout.hasClass("open")) {
-            popout.animate({
-                right: "0px"
-            }); 
-        popout.fadeOut(150);
-        } 
-        else {
+    popout.removeClass("open");
+    // if (popout.hasClass("open")) {
+    //         popout.animate({
+    //             right: "0px"
+    //         }); 
+    //     popout.fadeOut(150);
+    //     } 
+    //     else {
             // popout.animate({opacity: 0.0}, 5000, 'linear', callback);
             popout.animate({right: -popoutWidth}, 250);    
             popout.fadeOut(150);
             // popout.hide();
-        }
+        // }
         event.preventDefault();
   });
 });
