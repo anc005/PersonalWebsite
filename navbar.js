@@ -23,6 +23,7 @@ $(document).ready(function () {
             popout.animate({right: -popoutWidth}, 250);    
             popout.fadeOut(150);
         }
+
          event.preventDefault();
     });
   

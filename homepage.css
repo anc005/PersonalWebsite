@@ -54,6 +54,7 @@ svg{
     min-height: 1100px;
     width: calc(100%);
     background-color: #066AFF;
+    overflow: hidden;
 }
 
 .Profile > img{
@@ -90,7 +91,9 @@ svg{
     text-align: center;
     padding-top: 150px;
     color:white;
+   
 }
+
 .Education{
     color:white;
 	font-size: 30px;
@@ -544,6 +547,56 @@ body {
     margin-left: calc(50% - 90px);
     color: white;
 }
+
+/*******************Transitions*********************/
+#Goal, #ProfilePic, #Resume_Button, #Education{
+     visibility: hidden;
+}
+
+
+
+.slideUp{
+
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;    
+
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;         
+
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateX(100%);
+        opacity:0;
+    }
+    70%{
+        opacity:1;
+    }          
+    100% {
+        transform: translateY(0%);
+    }   
+    
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateX(100%);
+        opacity:0;
+    }
+    50% {
+    opacity:1;
+    }
+
+}
+
+
+
 /***********PROJECTS***********/
 
 
