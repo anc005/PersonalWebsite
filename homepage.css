@@ -70,8 +70,8 @@ svg{
 }
 .Resume_Button{
 	color:white;
-    margin-left:25%;
-    width:50%;
+    margin-left:calc(50% - 140px);
+    width:270px;
 	padding:3px;
 	border-style: solid;
 	border-color: white;
