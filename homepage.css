@@ -286,8 +286,15 @@ header {
     -ms-align-items:center;
     -moz-align-items:center;
     align-items:center;
-    background-color: #333333;
+    background-color: rgba(0, 0, 0, 0.6); 
     padding:1.5em 0;
+}
+header:hover{
+        -webkit-transition: all .5s; 
+    -moz-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
 #logo {
@@ -476,11 +483,11 @@ body {
     width:100%;
 }
 .Navigation{
-        width: 100%;
+    width: 100%;
     left: 0;
     z-index: 100;
     border-top: 0;
-       display: visible;
+    display: visible;
    opacity: 1;
    position: fixed;
    top:0px;
