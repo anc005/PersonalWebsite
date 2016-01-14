@@ -27,6 +27,13 @@ $(document).ready(function () {
          // event.preventDefault();
     });
     // Scroll for Desktop Menu
+    
+     $("#Down").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#AboutLink").offset().top 
+    }, 870);
+    event.preventDefault(); //Prevents page from flashing
+});
       $("#logo").click(function() {
     $('html, body').animate({
         scrollTop: $("#Entrance").offset().top 

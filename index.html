@@ -29,7 +29,8 @@
 			<div class="Name_Title">
 				Annie Chen
 			</div>
-		</div>
+<!-- 			<center><i id="Down" class="fa fa-chevron-down fa-3x"></i></center>
+ -->		</div>
 
 		<!--NAVIGATION BAR-->
 		<div class="Navigation">
@@ -67,12 +68,40 @@
 	 		 	<div id="Title">
 					ABOUT ME
 				</div>
-			<div class="Profile">
-		 		<img id="ProfilePic" src="Portrait.jpg">
-		 	</div>
+
 			 <div id="Goal" class="Goal">
-			 		"To develop scalable, efficient, user-friendly solutions."
+			 		<!-- <i class="quote fa fa-quote-left"></i> -->"To develop scalable, efficient, user-friendly solutions."<!-- <i class="quote fa fa-quote-right"></i> -->
 			 	</div>
+
+			 <!-- 	<ul class="flex-container">
+				  	<li class="flex-item">
+					  	<i class="fa fa-graduation-cap fa-2x"></i> 
+						<br>
+						<span id="IconWords">EDUCATION</span>
+					</li>
+				  	<li class="flex-item">UC San Diego [2013-2017] 
+					    	<br>
+					    	Computer Science (B.S)</li>
+				  	<li class="flex-item">
+				  		<i class="fa fa-code fa-2x"></i>
+				    	<br>
+				    	<span id="IconWords">INDUSTRY</span></li>
+				  	<li class="flex-item">
+				  		Teradata - Full Stack Java Developer
+				    	<br>
+				    	<span id="Shadow">Google </span>- CodeU + Android Program
+				    	<br>
+				    	Global TIES - Web Developer</li>
+				  	<li class="flex-item">
+				  		<i class="fa fa-user fa-2x"></i>
+				    	<br>
+				    	<span id="IconWords">LEADERSHIP</span></li>
+				  	<li class="flex-item">
+				  		CSE Department - Tutor
+				    	<br>
+				    	Writing Center - Mentor
+					</li>
+				</ul> -->
 
 			 	<div id="Education" class="Education">
 			 		<table>
@@ -82,7 +111,7 @@
 					    	<span id="IconWords">EDUCATION</span>
 
 					    </th>
-					    <td id="wordsAlign">UC San Diego [2013-2017] 
+					    <td id="wordsAlign">UC SAN DIEGO [2013-2017] 
 					    	<br>
 					    	Computer Science (B.S)
 					    </th>
@@ -92,11 +121,11 @@
 					    	<br>
 					    	<span id="IconWords">INDUSTRY</span>
 					    </td>
-					    <td id="wordsAlign">Teradata - Full Stack Java Developer
+					    <td id="wordsAlign">TERADATA &#8212; Full Stack Java Developer
 					    	<br>
-					    	Google - CodeU + Android Program
+					    	<span id="Shadow">GOOGLE </span>&#8212; CodeU + Android Program
 					    	<br>
-					    	Global TIES - Web Developer
+					    	GLOBAL TIES &#8212; Web Developer
 					    </td>
 					  </tr>
 					  <tr>
@@ -104,9 +133,9 @@
 					    	<br>
 					    	<span id="IconWords">LEADERSHIP</span>
 					    </td>
-					    <td id="wordsAlign">CSE Department - Tutor
+					    <td id="wordsAlign">CSE DEPARTMENT &#8212; Tutor
 					    	<br>
-					    	Writing Center - Mentor
+					    	WRITING CENTER &#8212; Tutor
 					    </td>
 
 					  </tr>
@@ -115,9 +144,11 @@
 					    <td id="wordsAlign">Freelance Photographer</td>
 					  </tr> -->
 					</table>
-
+			<div class="Profile">
+		 		<img id="ProfilePic" src="Portrait.jpg">
+		 	</div>
 					<a href="http://www.slideshare.net/AnnieChen27/annieresumelinkedin">
-		 			<div id="Resume_Button" class="Resume_Button">RESUME</div>
+		 			<div id="Resume_Button Shadow" class="Resume_Button">RESUME</div>
 		 		</a>
 			 	</div>
 		 </div>
@@ -182,7 +213,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
+			if (imagePos < topOfWindow+550) {
 				$(this).addClass("slideUp");
 			}
 		});
@@ -191,7 +222,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
+			if (imagePos < topOfWindow+550) {
 				$(this).addClass("fadeIn");
 			}
 		});
