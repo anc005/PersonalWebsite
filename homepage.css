@@ -103,12 +103,11 @@ svg{
     color:red;
 }
 .Goal{
-    font-size:40px;
+    font-size:45px;
     padding:40px;
     text-align: center;
     padding-top: 100px;
     color:white;
-   
 }
 
 .Education{
@@ -147,6 +146,9 @@ tr{
 }
 
 @media all and (max-width: 750px) {
+    table{
+        padding:10px;
+    }
     td{
         padding-left: 15px;
         padding-right: 0px;
