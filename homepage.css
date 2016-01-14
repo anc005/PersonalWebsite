@@ -120,13 +120,7 @@ table{
 }
 
 
-@media screen and (max-width: 750px) {
-    .About{
-        height: calc(100% + 500px);
-        min-height: 1050px;
-        padding:0px;
-        width:100%;
-    }
+@media all and (max-width: 750px) {
 
     .Profile > img{
         width:78%;
