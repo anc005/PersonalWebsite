@@ -30,27 +30,31 @@ svg{
 	margin-left:5%;
 }
 .Name_Title{
-	font-size: 10vw;
-	color: white;
-	margin-left: calc(50% - 25vw);
-	position:absolute;
-	margin-top:-100px;
+    position:absolute;
+    color: white;
+    font-size:55px;
+    margin-top:-80px;
+    margin-left: 68%;
 
 }
 #logo > img{
 	width:80px;
 }
-@media screen and (min-width: 700px) {
+@media all and (max-width: 800px) {
     .Name_Title{
-        font-size:55px;
-        margin-top:-80px;
-        margin-left: 68%;
+        font-size: 10vw;
+        margin-left: calc(50% - 25vw);
+        margin-top:-100px;
+    }
+    #logo > img{
+        display: none;
+        opacity: 0;
     }
 }
 
 /***************************ABOUT***************************/
 .About{
-    height:100%;
+    height:auto;
     min-height: 1100px;
     width: calc(100%);
     background-color: #066AFF;
@@ -100,6 +104,20 @@ svg{
 	padding:40px;	
     text-align: center;
 }
+table{
+        display:block;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    text-align: center;
+    color:white;
+    font-size: 40px;
+
+}
+.fa-graduation-cap{
+    font-size: 500px;
+}
 
 
 @media screen and (max-width: 750px) {
@@ -137,7 +155,7 @@ svg{
 
 /******************************PROJECTS****************************/
 .Projects{
-     height:100%;
+     height:auto;
     min-height: 720px;
 }
 #Title{
@@ -182,8 +200,7 @@ svg{
 
 /*********************************CONTACT ME******************************/
 .Contact_Me{
-    margin-top: 50px;
-	height:400px;
+	height:auto;
     font-size: 40px;
 }
 #Contact{
@@ -239,9 +256,6 @@ input:focus, textarea:focus {
     }
     .P1, .P2, .P3, .P4{
         padding:60px;
-    }
-    .Contact_Me{
-        margin-top: 58px;
     }
     #Title{
         font-size: 50px;
@@ -547,7 +561,7 @@ body {
 }
 /***************Credentials**********************/
 .Credentials{
-    margin-top: 345px;
+    margin-top: 30px;
     margin-left: calc(50% - 90px);
     color: white;
 }
@@ -598,6 +612,39 @@ body {
     }
 
 }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+
+      animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+        animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;         
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 
 

@@ -78,10 +78,24 @@
 		 		</a>
 		 	</div>
 			 	<div id="Education" class="Education">
-			 		UC San Diego
-			 		<br>
-			 		Major: Computer Science B.S.
+			 		<table>
+					  <tr>
+					    <th><i class="fa fa-graduation-cap"></i></th>
+					    <th>UC San Diego
+				 		<br>
+				 		Major: Computer Science B.S.</th>
+					  </tr>
+					  <tr>
+					    <td>Peter</td>
+					    <td>Griffin</td>
+					  </tr>
+					  <tr>
+					    <td>Lois</td>
+					    <td>Griffin</td>
+					  </tr>
+					</table>
 			 	</div>
+			 	
 <!-- 			</div>
  -->		 </div>
 
@@ -141,7 +155,7 @@
 
     <script>
 	$(window).scroll(function() {
-		$('#Goal, #ProfilePic, #Resume_Button, #Education').each(function(){
+		$('#Goal').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
@@ -149,7 +163,18 @@
 				$(this).addClass("slideUp");
 			}
 		});
+
+		$('#ProfilePic, #Resume_Button, #Education').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn");
+			}
+		});
+
 	});
+
 	
 	
 </script>
