@@ -67,37 +67,60 @@
 	 		 	<div id="Title">
 					ABOUT ME
 				</div>
-<!-- 		 	<div class="Profile_Info">
- -->			 <div id="Goal" class="Goal">
-			 		To develop scalable, efficient, user-friendly solutions.
-			 	</div>
-			 <div class="Profile">
+			<div class="Profile">
 		 		<img id="ProfilePic" src="Portrait.jpg">
-		 		<a href="http://www.slideshare.net/AnnieChen27/annieresumelinkedin">
-		 			<div id="Resume_Button" class="Resume_Button">&#x2B07;Resume</div>
-		 		</a>
 		 	</div>
+			 <div id="Goal" class="Goal">
+			 		"To develop scalable, efficient, user-friendly solutions."
+			 	</div>
+
 			 	<div id="Education" class="Education">
 			 		<table>
 					  <tr>
-					    <th><i class="fa fa-graduation-cap"></i></th>
-					    <th>UC San Diego
-				 		<br>
-				 		Major: Computer Science B.S.</th>
+					    <td><i class="fa fa-graduation-cap fa-2x"></i> 
+					    	<br>
+					    	<span id="IconWords">EDUCATION</span>
+
+					    </th>
+					    <td id="wordsAlign">UC San Diego [2013-2017] 
+					    	<br>
+					    	Computer Science (B.S)
+					    </th>
 					  </tr>
 					  <tr>
-					    <td>Peter</td>
-					    <td>Griffin</td>
+					    <td><i class="fa fa-code fa-2x"></i>
+					    	<br>
+					    	<span id="IconWords">INDUSTRY</span>
+					    </td>
+					    <td id="wordsAlign">Teradata - Full Stack Java Developer
+					    	<br>
+					    	Google - CodeU + Android Development Program
+					    	<br>
+					    	UCSD Global TIES - Web Developer
+					    </td>
 					  </tr>
 					  <tr>
-					    <td>Lois</td>
-					    <td>Griffin</td>
+					    <td><i class="fa fa-user fa-2x"></i>
+					    	<br>
+					    	<span id="IconWords">LEADERSHIP</span>
+					    </td>
+					    <td id="wordsAlign">CSE Department Tutor
+					    	<br>
+					    	Writing Center Mentor
+					    </td>
+
 					  </tr>
+<!-- 					  <tr>
+					    <td><i class="fa fa-camera-retro fa-2x"></i></td>
+					    <td id="wordsAlign">Freelance Photographer</td>
+					  </tr> -->
 					</table>
+
+					<a href="http://www.slideshare.net/AnnieChen27/annieresumelinkedin">
+		 			<div id="Resume_Button" class="Resume_Button">RESUME</div>
+		 		</a>
 			 	</div>
-			 	
-<!-- 			</div>
- -->		 </div>
+		 </div>
 
 	<a id="ProjectLink"></a>
 <!--PROJECTS-->
@@ -164,7 +187,7 @@
 			}
 		});
 
-		$('#ProfilePic, #Resume_Button, #Education').each(function(){
+		$('#ProfilePic, #Resume_Button, #Education, tr').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();

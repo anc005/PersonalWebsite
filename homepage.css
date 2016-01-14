@@ -62,8 +62,8 @@ svg{
 }
 
 .Profile > img{
-    padding-bottom: 50px;
-    padding-top: 50px;
+/*    padding-bottom: 50px;
+*/  padding-top: 100px;
     width:40%;
     max-width: 400px;
     display:block;
@@ -73,6 +73,7 @@ svg{
     margin:auto;
 }
 .Resume_Button{
+/*    height:auto;
 	color:white;
     margin-left:calc(50% - 140px);
     width:270px;
@@ -83,17 +84,29 @@ svg{
 	font-size: 50px;
 	text-align: center;
     cursor: pointer;
-}
-.Resume_Button:hover{
+*/
+    margin-left:calc(50% - 140px);
+    width:270px;
+    padding-top: 10px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
     cursor: pointer;
     background-color: white;
     color:#333333;
+}
+.Resume_Button:hover{
+    cursor: pointer;
+    color:red;
 }
 .Goal{
     font-size:40px;
     padding:40px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 100px;
     color:white;
    
 }
@@ -101,36 +114,61 @@ svg{
 .Education{
     color:white;
 	font-size: 30px;
-	padding:40px;	
-    text-align: center;
+/*	padding:40px;	
+*/    text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
 }
 table{
-        display:block;
+    display:block;
     left:0;
     right:0;
     bottom:0;
     margin:auto;
     text-align: center;
     color:white;
-    font-size: 40px;
-
+    font-size: 35px;
 }
-.fa-graduation-cap{
-    font-size: 500px;
+td{
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
+tr{
+        visibility: hidden;
+}
+#wordsAlign{
+/*    text-align: left;
+*/    font-size: 27px;
+}
+#IconWords{
+    font-size: 30px;
+}
 
 @media all and (max-width: 750px) {
-
+    td{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    #wordsAlign{
+        font-size: 20px;
+        text-align: center;
+    }
+    #IconWords{
+        font-size: 17px;
+    }
     .Profile > img{
         width:78%;
     } 
     .Education{
         font-size: 30px;
-        padding-left: 0px;
+/*        padding-left: 0px;
         padding-top: 100px;
         padding-right: 0px;
-        padding-bottom: 100px;
+        padding-bottom: 100px;*/
+ /*       padding-top: 50px;
+        padding-bottom: 50px;*/
     }
     .Goal{
         width:90%;
