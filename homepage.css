@@ -181,7 +181,7 @@ tr{
     }
     .Resume_Button{
         margin-left: calc(5% - 5px);
-        padding:0px;
+      /*  padding:0px;*/
         width:90%;
     }
 
