@@ -45,8 +45,11 @@
     .flex-item1, .flex-item2 {
         flex: 1 100%;
     }
+    .flex-item1:first-child{
+        padding-top: 0px;
+    }
     .flex-item1{
-        padding-top:0px;
+        padding-top:50px;
         padding-bottom: 0px;
     }
     .flex-item2{
