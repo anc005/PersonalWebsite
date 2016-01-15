@@ -189,7 +189,7 @@ svg{
     padding:40px;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     color:white;
 }
 
@@ -227,11 +227,12 @@ tr{
 /*background-color: red;
 */}
 /*#IconWords{
-    font-size: 30px;
+    color:red;
 }*/
 #Icon{
     font-size: 70px;
-}
+/*    text-shadow: 2px 2px red;
+*/}
 @media all and (max-width: 750px) {
     table{
       /*  padding:0px;*/
@@ -289,7 +290,8 @@ tr{
 	padding:25px;
     font-size: 100px;
 	text-align: center;
-}
+/*    text-shadow: 2px 2px red;
+*/}
 .P1, .P2, .P3, .P4{
 	padding:50px;
 	background-color: #333333;
