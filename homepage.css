@@ -1,35 +1,64 @@
 
 .flex-container {
   padding: 0;
-  margin: 0;
   list-style: none;
   left:0;
-  right:0;
-  bottom:0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
+/*  background-color: red;
+*/  width:700px;
+  margin-left:calc(50% - 350px);
+  align-items: center;
   -webkit-flex-flow: row wrap;
+  visibility: hidden;
 /*  justify-content: space-around;
 */}
 
-.flex-item {
+.flex-item1 {
 /*  padding: 10px;
-*/  padding-top: 10px;
-  padding-bottom: 10px;
-  width:calc(50% - 70px);
-  color: white;
+*/  padding-top: 40px;
+  padding-bottom: 40px;
+  width:200px;
+/*  width:100px;
+*/  color: white;
   font-size: 30px;
-  
-/*  font-size: 3em;
+/*  background-color: tomato;
+*//*  font-size: 3em;
 */  text-align: center;
 }
-@media all and (max-width: 1050px) {
-    .flex-item {
+.flex-item2 {
+/*  padding: 10px;
+*/  padding-top: 40px;
+  padding-bottom: 40px;
+  width:500px;
+ /* width:auto;*/
+  color: white;
+  font-size: 30px;
+/*  background-color: tomato;
+*//*  font-size: 3em;
+*/  text-align: center;
+}
+@media all and (max-width: 750px) {
+    .flex-item1, .flex-item2 {
         flex: 1 100%;
+    }
+    .flex-item1:first-child{
+        padding-top: 50px;
+    }
+    .flex-item1{
+        padding-top:50px;
+        padding-bottom: 0px;
+    }
+    .flex-item2{
+        font-size: 5vw; 
+        padding:0px;
+        padding-top: 10px;
+    }
+    .flex-item2:last-child{
+        padding-bottom: 50px;
     }
 }
 
@@ -197,9 +226,9 @@ tr{
 */    font-size: 27px;
 /*background-color: red;
 */}
-#IconWords{
+/*#IconWords{
     font-size: 30px;
-}
+}*/
 #Icon{
     font-size: 70px;
 }
@@ -211,16 +240,16 @@ tr{
         padding-left: 15px;
         padding-right: 0px;
     }
-    #Icon{
+/*    #Icon{
         font-size: 30px;
-    }
+    }*/
     #wordsAlign{
         font-size: 20px;
         text-align: center;
     }
-    #IconWords{
+/*    #IconWords{
         font-size: 17px;
-    }
+    }*/
     .Profile > img{
        /* padding-top: 50px;*/
         width:78%;

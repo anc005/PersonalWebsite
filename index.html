@@ -73,37 +73,43 @@
 			 		<!-- <i class="quote fa fa-quote-left"></i> -->"To develop scalable, efficient, user-friendly solutions."<!-- <i class="quote fa fa-quote-right"></i> -->
 			 	</div>
 
-			 <!-- 	<ul class="flex-container">
-				  	<li class="flex-item">
-					  	<i class="fa fa-graduation-cap fa-2x"></i> 
-						<br>
-						<span id="IconWords">EDUCATION</span>
-					</li>
-				  	<li class="flex-item">UC San Diego [2013-2017] 
-					    	<br>
-					    	Computer Science (B.S)</li>
-				  	<li class="flex-item">
-				  		<i class="fa fa-code fa-2x"></i>
-				    	<br>
-				    	<span id="IconWords">INDUSTRY</span></li>
-				  	<li class="flex-item">
-				  		Teradata - Full Stack Java Developer
-				    	<br>
-				    	<span id="Shadow">Google </span>- CodeU + Android Program
-				    	<br>
-				    	Global TIES - Web Developer</li>
-				  	<li class="flex-item">
-				  		<i class="fa fa-user fa-2x"></i>
-				    	<br>
-				    	<span id="IconWords">LEADERSHIP</span></li>
-				  	<li class="flex-item">
-				  		CSE Department - Tutor
-				    	<br>
-				    	Writing Center - Mentor
-					</li>
-				</ul> -->
 				<hr>
-			 	<div id="Education" class="Education">
+			<div id="Education" class="Education">
+			 	<ul class="flex-container">
+					  	<li class="flex-item1">
+						  	<i id="Icon" class="fa fa-graduation-cap"></i> 
+							<br>
+							<span id="IconWords">EDUCATION</span>
+						</li>
+					  	<li class="flex-item2">UC San Diego [2013-2017] 
+						    	<br>
+						    	Computer Science (B.S)
+						</li>
+
+					  	<li class="flex-item1">
+					  		<i id="Icon" class="fa fa-code"></i>
+					    	<br>
+					    	<span id="IconWords">INDUSTRY</span></li>
+					  	<li class="flex-item2">
+					  		Teradata - Full Stack Java Developer
+					    	<br>
+					    	<span id="Shadow">Google </span>- CodeU + Android Program
+					    	<br>
+					    	Global TIES - Web Developer
+					    </li>
+
+					  	<li class="flex-item1">
+					  		<i id="Icon" class="fa fa-user"></i>
+					    	<br>
+					    	<span id="IconWords">LEADERSHIP</span></li>
+					  	<li class="flex-item2">
+					  		CSE Department - Tutor
+					    	<br>
+					    	Writing Center - Mentor
+						</li>
+				</ul>
+				<!-- 
+			 	
 			 		<table>
 					  <tr>
 					    <td><i id="Icon" class="fa fa-graduation-cap"></i> 
@@ -143,8 +149,8 @@
 					    <td><i class="fa fa-camera-retro fa-2x"></i></td>
 					    <td id="wordsAlign">Freelance Photographer</td>
 					  </tr> -->
-					</table>
-					<hr>
+<!-- 					</table> 
+ -->					<hr>
 
 			<div class="Profile">
 		 		<img id="ProfilePic" src="Portrait.jpg">
@@ -220,7 +226,7 @@
 			}
 		});
 
-		$('#ProfilePic, #Resume_Button, #Education, tr').each(function(){
+		$('#ProfilePic, #Resume_Button, #Education, tr, #AboutInfo, li').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
