@@ -8,46 +8,41 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-/*  background-color: red;
-*/  width:700px;
+  width:700px;
   margin-left:calc(50% - 350px);
   align-items: center;
   -webkit-flex-flow: row wrap;
   visibility: hidden;
-/*  justify-content: space-around;
-*/}
-
+}
+.flex-item1, .flex-item2{
+    -webkit-transition: all .5s; 
+    -moz-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
+}
 .flex-item1 {
-/*  padding: 10px;
-*/  padding-top: 40px;
+  padding-top: 40px;
   padding-bottom: 40px;
   width:200px;
-/*  width:100px;
-*/  color: white;
-  font-size: 30px;
-/*  background-color: tomato;
-*//*  font-size: 3em;
-*/  text-align: center;
-}
-.flex-item2 {
-/*  padding: 10px;
-*/  padding-top: 40px;
-  padding-bottom: 40px;
-  width:500px;
- /* width:auto;*/
   color: white;
   font-size: 30px;
-/*  background-color: tomato;
-*//*  font-size: 3em;
-*/  text-align: center;
+  text-align: center;
+}
+.flex-item2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width:500px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
 }
 @media all and (max-width: 750px) {
     .flex-item1, .flex-item2 {
         flex: 1 100%;
-            -webkit-transition: all .5s; 
-    -moz-transition: all .5s; 
-    -o-transition: all .5s; 
-    transition: all .5s;
+        -webkit-transition: all .5s; 
+        -moz-transition: all .5s; 
+        -o-transition: all .5s; 
+        transition: all .5s;
     }
     .flex-item1:first-child{
         padding-top: 0px;
@@ -99,8 +94,7 @@ a{
 .Intro{
 	background-color: #333333;
     height:100%;
-/*    padding-bottom: 100px;
-*/}
+}
 svg{
 	width:70%;
 	margin-left:15%;
@@ -157,18 +151,6 @@ svg{
     margin:auto;
 }
 .Resume_Button{
-/*    height:auto;
-	color:white;
-    margin-left:calc(50% - 140px);
-    width:270px;
-	padding:3px;
-	border-style: solid;
-	border-color: white;
-	border-radius: 5px;
-	font-size: 50px;
-	text-align: center;
-    cursor: pointer;
-*/
     margin-left:calc(50% - 140px);
     width:270px;
     padding-top: 10px;
@@ -179,8 +161,7 @@ svg{
     line-height: 55px;
     text-align: center;
     cursor: pointer;
-/*    background-color: white;
-*/    color:white;
+    color:white;
 }
 .Resume_Button:hover{
     cursor: pointer;
@@ -225,14 +206,6 @@ td{
 tr{
     visibility: hidden;
 }
-#wordsAlign{
-/*    text-align: left;
-*/    font-size: 27px;
-/*background-color: red;
-*/}
-/*#IconWords{
-    color:red;
-}*/
 #Icon{
     font-size: 70px;
 /*    text-shadow: 2px 2px red;
@@ -245,28 +218,19 @@ tr{
         padding-left: 15px;
         padding-right: 0px;
     }
-/*    #Icon{
-        font-size: 30px;
-    }*/
+
     #wordsAlign{
         font-size: 20px;
         text-align: center;
     }
-/*    #IconWords{
-        font-size: 17px;
-    }*/
+
     .Profile > img{
        /* padding-top: 50px;*/
         width:78%;
     } 
     .Education{
         font-size: 30px;
-/*        padding-left: 0px;
-        padding-top: 100px;
-        padding-right: 0px;
-        padding-bottom: 100px;*/
- /*       padding-top: 50px;
-        padding-bottom: 50px;*/
+
     }
     .Goal{
         width:90%;
