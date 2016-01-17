@@ -1,31 +1,4 @@
 $(document).ready(function () {
-    $('.menu-btn').on('click', function(event){
-       
-        // create menu variables
-        var popout = $('#mobile-menu');
-        var popoutWidth = $('#mobile-menu').width();
-        
-        // toggle open class
-        popout.addClass("open");
-        
-        // slide menu
-        // if (popout.hasClass("open")) {
-
-            // popout.show();
-            popout.fadeIn(150);
-            popout.animate({
-                right: "0px"
-            }); 
-        // popout.animate({opacity: 1}, 1000);
-
-        // } 
-        // else {
-        //     popout.animate({right: -popoutWidth}, 250);    
-        //     popout.fadeOut(150);
-        // }
-
-         // event.preventDefault();
-    });
     // Scroll for Desktop Menu
     
      $("#Down").click(function() {
@@ -80,7 +53,39 @@ $(document).ready(function () {
     event.preventDefault();
 });
 
-  $(".close-btn").on('click', function(event){
+
+
+
+    $('.menu-btn').on('click', function(event){
+       
+        // create menu variables
+        var popout = $('#mobile-menu');
+        var popoutWidth = $('#mobile-menu').width();
+        
+        // toggle open class
+        popout.addClass("open");
+        
+        // slide menu
+        // if (popout.hasClass("open")) {
+
+            // popout.show();
+            popout.fadeIn(150);
+            popout.animate({
+                right: "0px"
+            }); 
+        // popout.animate({opacity: 1}, 1000);
+
+        // } 
+        // else {
+        //     popout.animate({right: -popoutWidth}, 250);    
+        //     popout.fadeOut(150);
+        // }
+
+         // event.preventDefault();
+    });
+    
+
+  $("#AMenu, #PMenu, #CMenu, #mobile-menu").on('click', function(event){
     var popout = $('#mobile-menu');
     var popoutWidth = $('#mobile-menu').width();
     popout.removeClass("open");

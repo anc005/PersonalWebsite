@@ -446,20 +446,27 @@ header:hover{
 }
 
 #mobile-menu > ul {
-    height:30%;
+    height:100%;
     width:100%;
     -webkit-flex-flow: column; 
     -mos-flex-flow: column; 
     flex-flow: column;
     text-align:center;
     padding:0;
-}
+/*    background-color: red;
+*/}
 
 #mobile-menu > ul > a > li {
     list-style-type:none;
     /*padding:1.1em 2em;*/
-    padding:10%;
-    font-size: 5vh;
+/*    padding:10%;
+*/  
+    padding-top:17%;
+    padding-bottom: 17%;
+/*    background-color: green;
+*/
+    text-align: center;
+    font-size: 50px;
 }  
 #mobile-menu > ul > a > li:hover{
     background: rgba(0, 0, 0, 0.5); 
@@ -474,6 +481,7 @@ header:hover{
 .close-btn {
   color: white;
   padding-bottom: 1em;
+  text-align: right;
 }
 
 nav {
@@ -748,13 +756,13 @@ body {
 
 
  path {
-            stroke-dasharray: 2000;
-            stroke-dashoffset: 2000;
-            animation: dash 4s linear forwards;
-        }
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation: dash 4s linear forwards;
+    }
 
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 10;
-          }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 10;
       }
+  }
