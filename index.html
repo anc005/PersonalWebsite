@@ -231,7 +231,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow + (topOfWindow/2)) {
+			if (imagePos < topOfWindow + ($(window).height()/7)) {
 				$(this).addClass("slideUp");
 			}
 		});
@@ -240,7 +240,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow + (topOfWindow/2)) {
+			if (imagePos < topOfWindow + ($(window).height()/7)) {
 				$(this).addClass("fadeIn");
 			}
 		});
