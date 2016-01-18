@@ -810,6 +810,10 @@ body {
     text-align: center;
 }
 .Credentials > a{
+        -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
     color:white;
 }
 .Credentials > a:hover{
