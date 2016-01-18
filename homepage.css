@@ -571,6 +571,7 @@ header:hover{
 
 #mobile-menu > ul > a > li {
     list-style-type:none;
+
     /*padding:1.1em 2em;*/
 /*    padding:10%;
 */  
@@ -582,6 +583,10 @@ header:hover{
     font-size: 50px;
 }  
 #mobile-menu > ul > a > li:hover{
+    -webkit-transition: all .5s; 
+    -moz-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
     background: rgba(0, 0, 0, 0.5); 
     color: #066AFF;
 }   
@@ -638,10 +643,18 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     color:#066AFF;
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
 }
 
 .menu-btn {
     display:none;
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
 }
 
 #contact-bar {
