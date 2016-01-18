@@ -84,6 +84,11 @@ $(document).ready(function () {
          // event.preventDefault();
     });
     
+// $('.flex-item3').each(function() {
+//   var link = $(this).html();
+//   $(this).contents().wrap('<a href="https://tritonbattles.herokuapp.com/"></a>');
+// });
+
 
   $("#AMenu, #PMenu, #CMenu, #mobile-menu").on('click', function(event){
     var popout = $('#mobile-menu');
