@@ -336,7 +336,8 @@ tr{
     -o-transition: all .5s; 
     transition: all .5s;
 }*/
-@media all and (max-width: 1040px) {
+
+@media all and (max-width: 1030px) {
     #Project_Logo{
         width:30%;
 
