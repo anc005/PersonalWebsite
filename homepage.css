@@ -295,7 +295,7 @@ tr{
   -ms-flex-align: center;
   -webkit-align-items: center;
 
-    
+
     display: flex;
     width:auto;
 /*    margin-left:calc(50% - 450px);
@@ -351,7 +351,7 @@ tr{
     transition: all .5s;
 }*/
 
-@media all and (max-width: 1030px) {
+@media all and (max-width: 750px) {
     #Project_Logo{
         width:30%;
 
