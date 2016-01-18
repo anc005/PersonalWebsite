@@ -13,7 +13,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="navbar.js"></script> 
-
+<link rel="shortcut icon" type="image/png" href="img/Logo.png">
 	</head>
 
 	<body>
@@ -133,25 +133,32 @@
 
 		<ul class="flex-container2">
 		  	<li class="flex-item3">
-		  		<img id="Project_Logo" src="img/Triton_Battles_Logo.png">
-				<br>
-				TRITON BATTLES
-				<br><hr>
-				<i>Online flashcard database.</i>
-		  	</li>
+		  		<a href="https://tritonbattles.herokuapp.com/">
+			  		<img id="Project_Logo" src="img/Triton_Battles_Logo.png">
+					<br>
+					TRITON BATTLES
+					<br><hr>
+					<i id="Project_Info">Online flashcard database.</i>
+				</a>
+<!-- 				<i class="fa fa-external-link-square"></i>
+ -->		  	</li>
 			<li class="flex-item3">
-				<img id="Project_Logo" src="img/Label_Fables_Logo.png">
-				<br>
-				LABEL FABLES
-				<br><hr>
-				<i>Stigma-awareness web forum.</i>
+				<a href="http://www.labelfables.com">
+					<img id="Project_Logo" src="img/Label_Fables_Logo.png">
+					<br>
+					LABEL FABLES
+					<br><hr>
+					<i id="Project_Info">Stigma-awareness web forum.</i>
+				</a>
 			</li>
 			<li class="flex-item3">
-				<img id="Project_Logo" src="img/NomNom_Logo.png">
-				<br>
-				NOMNOM
-				<br><hr>
-				<i>Randomized restaurant finder.</i>
+				<a href="https://github.com/Nevvea7/NomNom">
+					<img id="Project_Logo" src="img/NomNom_Logo.png">
+					<br>
+					NOMNOM
+					<br><hr>
+					<i id="Project_Info">Randomized restaurant finder.</i>
+				</a>
 			</li>
 
 		</ul>
@@ -213,7 +220,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+550) {
+			if (imagePos < topOfWindow + (topOfWindow/2)) {
 				$(this).addClass("slideUp");
 			}
 		});
@@ -222,7 +229,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+550) {
+			if (imagePos < topOfWindow + (topOfWindow/2)) {
 				$(this).addClass("fadeIn");
 			}
 		});

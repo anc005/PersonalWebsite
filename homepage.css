@@ -253,6 +253,9 @@ tr{
 /*    padding: 10px;
 */    width:150px;
 }
+#Project_Info{
+    font-size: 20px;
+}
 .Projects{
     height:auto;
     background-color: #066AFF;
@@ -266,38 +269,48 @@ tr{
 /*    text-shadow: 2px 2px red;
 */}
 
-
-
 .flex-container2 {
-
-  /*padding: 0;*/
     padding-top:50px;
     padding-bottom: 50px;
     padding-left: 0px;
     padding-right: 0px;
-  list-style: none;
-  left:0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  width:auto;
-  margin-left:calc(50% - 450px);
-  align-items: center;
-  -webkit-flex-flow: row wrap;
-  visibility: hidden;
+    list-style: none;
+    left:0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width:auto;
+    margin-left:calc(50% - 450px);
+    align-items: center;
+    -webkit-flex-flow: row wrap;
+    visibility: hidden;
 }
 .flex-item3{
-  
+    color: white;
     width:300px;
     color: white;
     font-size: 30px;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-transition: all .5s; 
     -moz-transition: all .5s; 
     -o-transition: all .5s; 
     transition: all .5s;
+
+}
+.flex-item3 > a, .flex-item3 > a:active, .flex-item3 > a:hover{
+    color:white;
+}
+.flex-item3:hover{
+    padding-left:30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+
 }
 
 @media all and (max-width: 920px) {
@@ -312,15 +325,14 @@ tr{
 
     }
     .flex-item3{
-            padding-top:50px;
-    padding-bottom: 50px;
+        padding-top:50px;
+        padding-bottom: 50px;
         flex: 1 100%;
-/*        padding:40px;
-*/        -webkit-transition: all .5s; 
+        -webkit-transition: all .5s; 
         -moz-transition: all .5s; 
         -o-transition: all .5s; 
         transition: all .5s;
-        font-size: 3em;
+        font-size: 5vw;
     }
 }
 /*
