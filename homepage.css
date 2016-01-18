@@ -743,8 +743,14 @@ body {
 /***************Credentials**********************/
 .Credentials{
     margin-top: 30px;
-    margin-left: calc(50% - 62px);
     color: white;
+    text-align: center;
+}
+.Credentials > a{
+    color:white;
+}
+.Credentials > a:hover{
+    color: #066AFF;
 }
 
 /*******************Transitions*********************/
