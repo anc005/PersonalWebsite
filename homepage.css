@@ -133,8 +133,8 @@ svg{
 /***************************ABOUT***************************/
 .About{
     height:auto;
-    min-height: 1100px;
-    width: calc(100%);
+/*    min-height: 1100px;
+*/    width: calc(100%);
     background-color: #066AFF;
     overflow: hidden;
 }
@@ -249,10 +249,15 @@ tr{
 }
 
 /******************************PROJECTS****************************/
-.Projects{
-     height:auto;
-    min-height: 720px;
+#Project_Logo{
+/*    padding: 10px;
+*/    width:150px;
 }
+.Projects{
+    height:auto;
+    background-color: #066AFF;
+/*    min-height: 720px;
+*/}
 #Title{
     background-color: white;
 	padding:25px;
@@ -260,6 +265,65 @@ tr{
 	text-align: center;
 /*    text-shadow: 2px 2px red;
 */}
+
+
+
+.flex-container2 {
+
+  /*padding: 0;*/
+    padding-top:50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  list-style: none;
+  left:0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width:auto;
+  margin-left:calc(50% - 450px);
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  visibility: hidden;
+}
+.flex-item3{
+  
+    width:300px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    -webkit-transition: all .5s; 
+    -moz-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
+}
+
+@media all and (max-width: 920px) {
+    #Project_Logo{
+        width:30%;
+
+    }
+    .flex-container2{
+        margin-left: 0px;
+        width: auto;
+        padding: 0px;
+
+    }
+    .flex-item3{
+            padding-top:50px;
+    padding-bottom: 50px;
+        flex: 1 100%;
+/*        padding:40px;
+*/        -webkit-transition: all .5s; 
+        -moz-transition: all .5s; 
+        -o-transition: all .5s; 
+        transition: all .5s;
+        font-size: 3em;
+    }
+}
+/*
 .P1, .P2, .P3, .P4{
 	padding:50px;
 	background-color: #333333;
@@ -292,12 +356,13 @@ tr{
 .P4:hover:after{
     font-size: 30px;
     content: "Online flashcard database used to study and compete amongst peers.";
-}
+}*/
 
 /*********************************CONTACT ME******************************/
 .Contact_Me{
 	height:auto;
     font-size: 40px;
+    margin-top: -16px;
 }
 #Contact{
 	padding-left:50px;

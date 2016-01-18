@@ -28,7 +28,7 @@ $(document).ready(function () {
 });
       $("#CDeskMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ContactLink").offset().top - 88
+        scrollTop: $("#ContactLink").offset().top - 104
     }, 870);
     event.preventDefault();
 });
@@ -48,7 +48,7 @@ $(document).ready(function () {
 });
       $("#CMenu").click(function() {
     $('html, body').animate({
-        scrollTop: $("#ContactLink").offset().top - 88
+        scrollTop: $("#ContactLink").offset().top - 104
     }, 870);
     event.preventDefault();
 });
