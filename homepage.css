@@ -377,6 +377,8 @@ tr{
     margin-top: -16px;
 }
 #Contact{
+    width: 70%;
+    margin-left: calc(15% - 50px);
 	padding-left:50px;
     padding-right: 50px;
     padding-top: 40px;
@@ -400,11 +402,10 @@ input:focus, textarea:focus {
     border-color: #066AFF;
 }
 
-
 .Send_Button{
-    margin-left:25%;
+    margin-left:35%;
     color:white;
-    width:50%;
+    width:30%;
     padding-top: 10px;
     border-style: solid;
     border-color: white;
@@ -419,8 +420,10 @@ input:focus, textarea:focus {
 	background-color: white;
 }
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: 750px) {
     #Contact{
+        width: auto;
+        margin-left: 0px;
         padding-left:20px;
         padding-right: 20px;
     }
@@ -432,6 +435,10 @@ input:focus, textarea:focus {
     }
     #Title{
         font-size: 50px;
+    }
+    .Send_Button{
+        width: calc(100% - 42px);
+        margin-left: 19px;
     }
 
 }
