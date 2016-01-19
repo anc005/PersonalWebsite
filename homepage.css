@@ -267,13 +267,15 @@ tr{
 */}
 #Title{
     background-color: white;
-	padding:25px;
+/*    color: #066AFF;
+*/	padding:25px;
     font-size: 100px;
 	text-align: center;
-/*    text-shadow: 2px 2px red;
-*/}
+   /* text-shadow: 2px 2px red;*/
+}
 
 .flex-container2 {
+    margin-top: 0px;
     padding-top:50px;
     padding-bottom: 50px;
     padding-left: 0px;
@@ -477,7 +479,7 @@ input:focus, textarea:focus {
         padding:60px;
     }*/
     #Title{
-        font-size: 50px;
+        font-size: 10vw;
     }
     .Send_Button{
         width: calc(100% - 34px);
