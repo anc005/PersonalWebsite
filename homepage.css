@@ -276,6 +276,7 @@ tr{
 
 .flex-container2 {
     margin-top: 0px;
+    margin-bottom: 0px;
     padding-top:50px;
     padding-bottom: 50px;
     padding-left: 0px;
@@ -413,8 +414,8 @@ tr{
 .Contact_Me{
 	height:auto;
     font-size: 40px;
-    margin-top: -16px;
-}
+/*    margin-top: -16px;
+*/}
 #Contact{
     width: 70%;
     margin-left: calc(15% - 50px);
