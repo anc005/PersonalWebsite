@@ -418,7 +418,7 @@ input:focus, textarea:focus {
 
 /*********************Navigation Bar************************/
 .active{
-    color:tomato;
+    color: #066AFF;
 }
 .Navigation{
     opacity:0;
@@ -460,7 +460,7 @@ header {
     -ms-align-items:center;
     -moz-align-items:center;
     align-items:center;
-    background-color: rgba(0, 0, 0, .8); 
+    background-color: rgba(0, 0, 0, .9); 
     padding:1.5em 0;
 }
 header:hover{
