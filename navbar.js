@@ -116,7 +116,7 @@ $(document).ready(function() {
     var stickyNav = function(){
     var scrollTop = $(window).scrollTop();
           
-    if (scrollTop > stickyNavTop) { 
+    if (scrollTop > (stickyNavTop - $(window).height()/15)) { 
         $('.Navigation').addClass('sticky');
         $('.About').addClass('Content-Nav');
         // $('.Projects').addClass('Content-Nav');
