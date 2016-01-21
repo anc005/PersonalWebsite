@@ -76,7 +76,7 @@ hr{
 
 }
 *::-moz-selection {
-  background: black; /* Gecko Browsers */
+  background: red; /* WebKit/Blink Browsers */
   color: white;
 }
 
@@ -133,8 +133,7 @@ svg{
 /***************************ABOUT***************************/
 .About{
     height:auto;
-/*    min-height: 1100px;
-*/    width: calc(100%);
+    width: calc(100%);
     background-color: #066AFF;
     overflow: hidden;
 }
@@ -185,10 +184,9 @@ svg{
 .Education{
     color:white;
 	font-size: 30px;
-/*	padding:40px;	
-*/    text-align: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 table{
     display:block;
@@ -215,9 +213,6 @@ tr{
 /*    text-shadow: 2px 2px red;
 */}
 @media all and (max-width: 750px) {
-    table{
-      /*  padding:0px;*/
-    }
     td{
         padding-left: 15px;
         padding-right: 0px;
@@ -229,7 +224,6 @@ tr{
     }
 
     .Profile > img{
-       /* padding-top: 50px;*/
         width:78%;
     } 
     .Education{
@@ -246,7 +240,6 @@ tr{
     }
     .Resume_Button{
         margin-left: calc(5% - 5px);
-      /*  padding:0px;*/
         width:90%;
     }
 
@@ -254,8 +247,7 @@ tr{
 
 /******************************PROJECTS****************************/
 #Project_Logo{
-/*    padding: 10px;
-*/    width:150px;
+    width:150px;
 }
 #Project_Info{
     font-size: 20px;
@@ -263,12 +255,10 @@ tr{
 .Projects{
     height:auto;
     background-color: #066AFF;
-/*    min-height: 720px;
-*/}
+}
 #Title{
     background-color: white;
-/*    color: #066AFF;
-*/	padding:25px;
+	padding:25px;
     font-size: 100px;
 	text-align: center;
    /* text-shadow: 2px 2px red;*/
@@ -331,28 +321,6 @@ tr{
     background-color: rgba(0, 0, 0, 0.2); 
     cursor: pointer;
 }
-/*#Project_Container{
-    background-color: red;
-}*/
-/*#Project_Container{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all .5s; 
-    -moz-transition: all .5s; 
-    -o-transition: all .5s; 
-    transition: all .5s;
-}
-#Project_Container:hover, .flex-item3:hover{
-    padding-right:50px;
-    padding-left: 50px;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.2); 
-    cursor: pointer;
-        -webkit-transition: all .5s; 
-    -moz-transition: all .5s; 
-    -o-transition: all .5s; 
-    transition: all .5s;
-}*/
 
 @media all and (max-width: 750px) {
     #Project_Logo{
@@ -375,47 +343,12 @@ tr{
         font-size: 30px;
     }
 }
-/*
-.P1, .P2, .P3, .P4{
-	padding:50px;
-	background-color: #333333;
-	cursor: pointer;
-	text-align: center;
-	font-size: 48px;
-	color:white;
-    height:55px;
-    vertical-align: middle;
-
-}
-.P1:hover, .P2:hover, .P3:hover, .P4:hover{
-	background-color: #066AFF;
-}
-.P1:hover span, .P2:hover span, .P3:hover span, .P4:hover span{
-    display:none;
-}
-.P1:hover:after{
-    font-size: 30px;
-    content: "Full Stack Java application used by 100+ Data Analysts";
-}
-.P2:hover:after{
-    font-size: 30px;
-    content: "Mentorship program aimed towards developing technical Computer Science skills. Completed Udacity Android course and developed NomNom.";
-}
-.P3:hover:after{
-    font-size: 30px;
-    content: "Anonymous, online stigma-awareness forum web application.";
-}
-.P4:hover:after{
-    font-size: 30px;
-    content: "Online flashcard database used to study and compete amongst peers.";
-}*/
 
 /*********************************CONTACT ME******************************/
 .Contact_Me{
 	height:auto;
     font-size: 40px;
-/*    margin-top: -16px;
-*/}
+}
 #Contact{
     width: 70%;
     margin-left: calc(15% - 50px);
@@ -473,12 +406,6 @@ input:focus, textarea:focus {
         padding-left:15px;
         padding-right: 15px;
     }
-/*    .P1:hover:after, .P2:hover:after, .P3:hover:after, .P4:hover:after{
-        font-size: 20px;
-    }
-    .P1, .P2, .P3, .P4{
-        padding:60px;
-    }*/
     #Title{
         font-size: 10vw;
     }
@@ -570,7 +497,6 @@ header:hover{
     align-items: center;
     width:100%;
     z-index:999;
-   /* margin-top:0em;*/
     color: white;
     background-color: #333333;
 }
@@ -583,19 +509,13 @@ header:hover{
     flex-flow: column;
    
     padding:0;
-/*    background-color: red;
-*/}
+}
 
 #mobile-menu > ul > a > li {
     list-style-type:none;
     text-align:center;
-
-/*    padding-top:40px;
-    padding-bottom: 40px;*/
     padding-top: calc(20% - 50px);
     padding-bottom: calc(20% - 50px);
-/*    background-color: green;
-*/
     text-align: center;
     font-size: 50px;
 }  
@@ -618,9 +538,8 @@ header:hover{
     padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
- /* width: calc(100% - 40px);*/
-  color: white;
-  text-align: right;
+    color: white;
+    text-align: right;
 }
 .close-btn:hover{
     -webkit-transition: all .3s; 

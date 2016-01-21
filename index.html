@@ -90,7 +90,7 @@
 						    	<br>
 						    	Computer Science (B.S)
 						    	<br>
-						    <!-- 	<span id="Project_Info"> -->Provost's + Warren Honors<!-- </span> -->
+						    	Provost's + Warren Honors
 						</li>
 
 					  	<li class="flex-item1">
@@ -171,23 +171,6 @@
 			</li>
 
 		</ul>
-		
-		
-
-
-<!-- 		<a href="https://www.linkedin.com/company/1466?trk=ppro_cprof"><div class="P1">
-			<span>Teradata</span>
-		</div></a>
-		<a href="https://github.com/Nevvea7/NomNom"><div class="P2">
-			<span>Google: CodeU</span>
-		</div></a>
-		<a href="http://www.labelfables.com"><div class="P3">
-
-			<span>Label Fables</span>
-		</div></a>
-		<a href="https://tritonbattles.herokuapp.com/"><div class="P4">
-			<span>Triton Battles</span>
-		</div></a> -->
 	</div>
 
 	<a id="ContactLink"></a>
@@ -256,31 +239,29 @@
 
 	});
 
+	//check the pages when scroll event occurs
+	$(window).scroll(function(){
 
+	    // Get the current vertical position of the scroll bar
+	    position = $(this).scrollTop();
+	    $('.desktop li a[href^="#"]').each(function(){
+	          var anchorId = $(this).attr('href'); 
+	           var target = $(anchorId).offset().top;
+	           // check if the document has crossed the page
+	        // console.log(position + 100,target);
+	        if((position +100)>=target){
 
-//check the pages when scroll event occurs
-$(window).scroll(function(){
+	             //remove active from all anchor and add it to the clicked anchor
+	            $('.desktop li a[href^="#"]').removeClass("active")
+	             // event.preventDefault();
+	            $(this).addClass('active'); 
+	        }
+	    })
 
-    // Get the current vertical position of the scroll bar
-    position = $(this).scrollTop();
-    $('.desktop li a[href^="#"]').each(function(){
-          var anchorId = $(this).attr('href'); 
-           var target = $(anchorId).offset().top;
-           // check if the document has crossed the page
-        // console.log(position + 100,target);
-        if((position +100)>=target){
+	})
 
-             //remove active from all anchor and add it to the clicked anchor
-            $('.desktop li a[href^="#"]').removeClass("active")
-             // event.preventDefault();
-            $(this).addClass('active'); 
-        }
-    })
-
-})
-
-	
-</script>
+		
+	</script>
 
 
 
