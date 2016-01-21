@@ -26,7 +26,18 @@ body{
 a{
     text-decoration: none;
 }
-
+#Title{
+    background-color: white;
+    padding:25px;
+    font-size: 100px;
+    text-align: center;
+   /* text-shadow: 2px 2px red;*/
+}
+@media all and (max-width: 750px) {
+    #Title{
+        font-size: 10vw;
+    }
+}
 /**********************Introduction Page*********************/
 .Intro{
 	background-color: #333333;
@@ -86,7 +97,17 @@ svg{
 .Credentials > a:hover{
     color: #066AFF;
 }
-
+.Footer_Message{
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+@media all and (max-width: 750px) {
+    .Footer_Message{
+        font-size: 30px;
+    }
+}
 /*******************Transitions*********************/
 #Goal, #ProfilePic, #Resume_Button, #Education{
      visibility: hidden;
