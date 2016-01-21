@@ -39,10 +39,11 @@
 		<!--NAVIGATION BAR-->
 		<div class="Navigation">
 			<div id="mobile-menu">
+
 			    <ul>
+			    	<div class="close-btn"><i class="fa fa-times fa-3x"></i> </div>
 			    	<!-- was in class fa fa-bars -->
-<!-- 			        <a href="#"><li class="close-btn"><i class="fa fa-times"></i> </li></a>
- -->			    <a href="#AboutLink"><li id="AMenu">ABOUT</li></a>
+			   		 <a href="#AboutLink"><li id="AMenu">ABOUT</li></a>
 			        <a href="#ProjectLink"><li id="PMenu">PROJECTS</li></a>
 			        <a href="#ContactLink"><li id="CMenu">CONTACT</li></a>
 			     </ul>
@@ -255,7 +256,29 @@
 
 	});
 
-	
+
+
+//check the pages when scroll event occurs
+$(window).scroll(function(){
+
+    // Get the current vertical position of the scroll bar
+    position = $(this).scrollTop();
+    $('.desktop li a[href^="#"]').each(function(){
+          var anchorId = $(this).attr('href'); 
+           var target = $(anchorId).offset().top;
+           // check if the document has crossed the page
+        // console.log(position + 100,target);
+        if((position +100)>=target){
+
+             //remove active from all anchor and add it to the clicked anchor
+            $('.desktop li a[href^="#"]').removeClass("active")
+             // event.preventDefault();
+            $(this).addClass('active'); 
+        }
+    })
+
+})
+
 	
 </script>
 

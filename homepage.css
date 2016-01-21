@@ -490,8 +490,8 @@ input:focus, textarea:focus {
 }
 
 /*********************Navigation Bar************************/
-#Active{ /***Made for potentially showing which active menu status you are on ***/
-    color:#066AFF;
+.active{
+    color:tomato;
 }
 .Navigation{
     opacity:0;
@@ -570,7 +570,7 @@ header:hover{
     align-items: center;
     width:100%;
     z-index:999;
-    margin-top:0em;
+   /* margin-top:0em;*/
     color: white;
     background-color: #333333;
 }
@@ -581,42 +581,53 @@ header:hover{
     -webkit-flex-flow: column; 
     -mos-flex-flow: column; 
     flex-flow: column;
-    text-align:center;
+   
     padding:0;
 /*    background-color: red;
 */}
 
 #mobile-menu > ul > a > li {
     list-style-type:none;
+    text-align:center;
 
-    /*padding:1.1em 2em;*/
-/*    padding:10%;
-*/  
-    padding-top:17%;
-    padding-bottom: 17%;
+/*    padding-top:40px;
+    padding-bottom: 40px;*/
+    padding-top: calc(20% - 50px);
+    padding-bottom: calc(20% - 50px);
 /*    background-color: green;
 */
     text-align: center;
     font-size: 50px;
 }  
+
 #mobile-menu > ul > a > li:hover{
-    -webkit-transition: all .5s; 
-    -moz-transition: all .5s; 
-    -o-transition: all .5s; 
-    transition: all .5s;
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
     background: rgba(0, 0, 0, 0.5); 
     color: #066AFF;
 }   
-
 
 #mobile-menu > ul > a {
     color:#fff;
     text-decoration:none
 }
 .close-btn {
+    cursor: pointer;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+ /* width: calc(100% - 40px);*/
   color: white;
-  padding-bottom: 1em;
   text-align: right;
+}
+.close-btn:hover{
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
+    color: #066AFF;
 }
 
 nav {
