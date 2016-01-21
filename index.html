@@ -5,16 +5,23 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
  -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="homepage.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="./CSS/About.css">
+	  <link rel="stylesheet" type="text/css" href="./CSS/Contact.css">
+	  <link rel="stylesheet" type="text/css" href="./CSS/Header_Footer.css">
+	  <link rel="stylesheet" type="text/css" href="./CSS/Nav_Bar.css">
+	  <link rel="stylesheet" type="text/css" href="./CSS/Projects.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="navbar.js"></script> 
-<link rel="shortcut icon" type="image/png" href="img/Logo.png">
-<title>Annie Chen</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script type="text/javascript" src="./JS/Nav_Bar.js"></script> 
+	  <script type="text/javascript" src="./JS/Animation_Transitions.js"></script> 
+
+	  <link rel="shortcut icon" type="image/png" href="img/Logo.png">
+
+	  <title>Annie Chen</title>
 	</head>
 
 	<body>
@@ -216,55 +223,6 @@
 
 	</div>
 	<br>
-
-    <script>
-	$(window).scroll(function() {
-		$('#Goal').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow + ($(window).height()/8)) {
-				$(this).addClass("slideUp");
-			}
-		});
-
-		$('#ProfilePic, #Resume_Button, #Education, #AboutInfo, li').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow + ($(window).height()/8)) {
-				$(this).addClass("fadeIn");
-			}
-		});
-
-	});
-
-	//check the pages when scroll event occurs
-	$(window).scroll(function(){
-
-	    // Get the current vertical position of the scroll bar
-	    position = $(this).scrollTop();
-	    $('.desktop li a[href^="#"]').each(function(){
-	          var anchorId = $(this).attr('href'); 
-	           var target = $(anchorId).offset().top;
-	           // check if the document has crossed the page
-	        // console.log(position + 100,target);
-	        if((position +100)>=target){
-
-	             //remove active from all anchor and add it to the clicked anchor
-	            $('.desktop li a[href^="#"]').removeClass("active")
-	             // event.preventDefault();
-	            $(this).addClass('active'); 
-	        }
-	    })
-
-	})
-
-		
-	</script>
-
-
-
 
 	</body>
 

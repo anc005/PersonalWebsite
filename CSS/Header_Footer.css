@@ -1,0 +1,182 @@
+/********************Highlighting text***********************/
+hr{
+    width:50%;
+    color:white;
+    height: 1px;
+    background-color: white;
+    border-width: 0px;
+    opacity: .5;
+}
+*::selection {
+  background: red; /* WebKit/Blink Browsers */
+  color: white;
+
+}
+*::-moz-selection {
+  background: red; /* WebKit/Blink Browsers */
+  color: white;
+}
+
+body{
+	margin:0;
+	font-family: 'Josefin Sans', sans-serif;
+    background-color: #333333;
+    width:100%;
+}
+a{
+    text-decoration: none;
+}
+
+/**********************Introduction Page*********************/
+.Intro{
+	background-color: #333333;
+    height:100%;
+}
+svg{
+	width:70%;
+	margin-left:15%;
+}
+.Name_Title{
+    position:absolute;
+    color: white;
+    font-size:55px;
+    margin-top:-180px;
+    margin-left: 68%;
+    padding-top: 50px;
+}
+#logo > img{
+	width:80px;
+}
+#Down{
+    color:white;
+    margin-top: -80px;
+}
+#Down:hover{
+    cursor: pointer;
+    color:#066AFF;
+}
+@media all and (max-width: 800px) {
+    .Name_Title{
+        font-size: 10vw;
+        margin-left: calc(50% - 25vw);
+        margin-top:-140px;
+    }
+    #logo > img{
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+
+
+/***************Credentials**********************/
+.Credentials{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+.Credentials > a{
+        -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
+    color:white;
+}
+.Credentials > a:hover{
+    color: #066AFF;
+}
+
+/*******************Transitions*********************/
+#Goal, #ProfilePic, #Resume_Button, #Education{
+     visibility: hidden;
+}
+
+
+
+.slideUp{
+
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;    
+
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;         
+
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateX(100%);
+        opacity:0;
+    }
+    70%{
+        opacity:1;
+    }          
+    100% {
+        transform: translateY(0%);
+    }   
+    
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateX(100%);
+        opacity:0;
+    }
+    50% {
+    opacity:1;
+    }
+
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+
+      animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+        animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;         
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/***********LOGO ENTRANCE***********/
+
+
+ path {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation: dash 4s linear forwards;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 10;
+      }
+  }
