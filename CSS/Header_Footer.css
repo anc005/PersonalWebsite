@@ -103,13 +103,13 @@ svg{
     padding-bottom: 40px;
     font-size: 40px;
 }
-.Footer_Pic{
+.Footer_Pic > img{
     padding-top: 40px;
     padding-bottom: 20px;
-    width:300px;
+    width:330px;
 }
 @media all and (max-width: 750px) {
-    .Footer_Pic{
+    .Footer_Pic > img{
         width:80%;
         left:10%;
     }
