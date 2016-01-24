@@ -34,10 +34,25 @@
   -webkit-align-items: center;
     display: flex;
     width:auto;
+   
+   /* width:auto;*/
 /*    margin-left:calc(50% - 450px);
 */    align-items: center;
     -webkit-flex-flow: row wrap;
     visibility: hidden;
+}
+@media all and (min-width: 751px) and (max-width: 980px) {
+    .flex-container2{
+        padding-left:calc(50% - 330px);
+        width:660px;
+        margin-left: 0px;
+                -webkit-transition: all .5s; 
+        -moz-transition: all .5s; 
+        -o-transition: all .5s; 
+        transition: all .5s;
+
+    }
+
 }
 .flex-item3{
     color: white;
@@ -54,6 +69,8 @@
     -o-transition: all .5s; 
     transition: all .5s;
 }
+
+
 .flex-item3 > a, .flex-item3 > a:active, .flex-item3 > a:hover{
     color:white;
 }
