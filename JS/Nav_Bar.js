@@ -52,7 +52,7 @@ $(document).ready(function () {
     });
     $("#CDeskMenu").click(function() {
         $('html, body').animate({
-            scrollTop: $("#ContactLink").offset().top - 104
+            scrollTop: $("#ContactLink").offset().top - 88
         }, 870);
         event.preventDefault();
     });
@@ -72,7 +72,7 @@ $(document).ready(function () {
     });
       $("#CMenu").click(function() {
         $('html, body').animate({
-            scrollTop: $("#ContactLink").offset().top - 104
+            scrollTop: $("#ContactLink").offset().top - 88
         }, 870);
         event.preventDefault();
     });

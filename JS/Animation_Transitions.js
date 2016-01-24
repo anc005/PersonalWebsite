@@ -1,5 +1,6 @@
 // Animations for transitions
 $(window).scroll(function() {
+    //Slide in
     $('#Goal').each(function(){
     var imagePos = $(this).offset().top;
 
@@ -9,6 +10,7 @@ $(window).scroll(function() {
         }
     });
 
+    //Fade
     $('#ProfilePic, #Resume_Button, #Education, #AboutInfo, li').each(function(){
     var imagePos = $(this).offset().top;
 

@@ -103,7 +103,16 @@ svg{
     padding-bottom: 40px;
     font-size: 40px;
 }
+.Footer_Pic{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width:300px;
+}
 @media all and (max-width: 750px) {
+    .Footer_Pic{
+        width:80%;
+        left:10%;
+    }
     .Footer_Message{
         font-size: 30px;
     }
