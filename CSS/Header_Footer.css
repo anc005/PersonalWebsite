@@ -106,7 +106,7 @@ svg{
 .Footer_Pic > img{
     padding-top: 40px;
     padding-bottom: 20px;
-    width:330px;
+    width:380px;
 }
 @media all and (max-width: 750px) {
     .Footer_Pic > img{
