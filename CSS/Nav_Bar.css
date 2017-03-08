@@ -97,10 +97,10 @@ header:hover{
 #mobile-menu > ul > a > li {
     list-style-type:none;
     text-align:center;
-    padding-top: calc(20% - 50px);
-    padding-bottom: calc(20% - 50px);
+    padding-top: calc(8%);
+    padding-bottom: calc(8%);
     text-align: center;
-    font-size: 50px;
+    font-size: 4vh;
 }  
 
 #mobile-menu > ul > a > li:hover{

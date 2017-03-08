@@ -107,13 +107,11 @@ tr{
         padding-bottom:70px;
     }
     .Resume_Button{
-        margin-left: calc(5% - 5px);
-        width:90%;
+        margin-left: calc(15% - 5px);
+        width:70%;
     }
 
 }
-
-
 
 
 /*******************Info flexbox***********************/

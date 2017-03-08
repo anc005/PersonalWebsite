@@ -50,13 +50,11 @@
         -moz-transition: all .5s; 
         -o-transition: all .5s; 
         transition: all .5s;
-
     }
-
 }
 .flex-item3{
     color: white;
-    width:350px;
+    width:300px;
          /*   flex: 1 100%;*/
 
     color: white;

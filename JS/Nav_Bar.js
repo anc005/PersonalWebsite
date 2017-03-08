@@ -21,7 +21,6 @@ $(window).scroll(function(){
 
 })
 
-        
 //Connecting navigation bar elements to their respected place in the page
 $(document).ready(function () {
 
@@ -105,7 +104,10 @@ $(document).ready(function () {
         popout.animate({right: -popoutWidth}, 250);    
         popout.fadeOut(150);
 
-        event.preventDefault();
+        //Allow preventDefault if it is not resume
+        if (this == ("#AMenu" || "#PMenu" || "#CMenu"))
+                event.preventDefault();
+
       });
     });
 
