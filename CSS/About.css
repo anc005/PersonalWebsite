@@ -150,8 +150,9 @@ tr{
   padding-bottom: 40px;
   width:500px;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+
 }
 @media all and (max-width: 750px) {
     .flex-item1, .flex-item2 {
@@ -175,5 +176,9 @@ tr{
     }
     .flex-item2:last-child{
         padding-bottom: 50px;
+    }
+    .flex-container {
+        width: auto;
+        margin-left: 0;
     }
 }
