@@ -1,254 +1,92 @@
 <html>
 	<head>	
-<!-- 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
- -->
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" type="text/css" href="./CSS/About.css">
-	  <link rel="stylesheet" type="text/css" href="./CSS/Contact.css">
-	  <link rel="stylesheet" type="text/css" href="./CSS/Header_Footer.css">
-	  <link rel="stylesheet" type="text/css" href="./CSS/Nav_Bar.css">
-	  <link rel="stylesheet" type="text/css" href="./CSS/Projects.css">
+		<title>Annie Chen</title>
+	  	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-	  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	  	<style>
+	  		.container{
+	  			text-align: center;
 
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	  <script type="text/javascript" src="./JS/Nav_Bar.js"></script> 
-	  <script type="text/javascript" src="./JS/Animation_Transitions.js"></script> 
-
-	  <link rel="shortcut icon" type="image/png" href="img/Logo.png">
-
-	  <title>Annie Chen</title>
+	  		}
+	  		img.me{
+	  			height: 400px;
+	  			width: auto;
+	  		}
+	  		.fa:hover{
+	  			color: orange;
+	  		}
+	  		.description{
+	  			font-size: 25px;
+	  		}
+	  		.connect{
+	  			font-size: 30px;
+	  		}
+	  		.job{
+	  			padding-left: 3px;
+	  			padding-right: 3px;
+	  			padding-top: 1px;
+	  			padding-bottom: 1px;
+	  			background-color: orange;
+	  			color: black;
+	  			border-radius:5px;
+	  			border-color: yellow;
+	  			display: inline-block;
+	  		}
+	  		@media only screen and (max-width: 900px) {
+	  			img.me{
+	  				width: 100%;
+	  				height: auto;
+	  			}
+	  			.fa{
+	  				width: 30px;
+	  			}
+	  			.description{
+	  				font-size: 3.7vw;
+	  			}
+	  		}
+	  	</style>
 	</head>
 
+	<header>
+		<a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
+		<br>
+		<a href="photography.html">Photography</a>  
+		<a href="graphic_design.html">Graphic Design</a>  
+		<a href="illustrations.html">Illustrations</a>  
+		<a href="code.html">Code</a>  
+		<a href="Annie_Chen_Resume.pdf" target="_blank">Resume</a>  
+		<a href="index.html" style="color:yellow">Contact</a>
+		<hr>
+	</header>
+
 	<body>
-		<a id="Entrance">
-		<div class="Intro">
-			<svg width="100%" height="100%" viewBox="0 0 500 341" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-			    <g transform="matrix(1,0,0,1,-445.224,-214.76)">
-			        <path d="M730,322.929C634.091,357.046 442.273,425.28 488.74,498C526.997,557.873 781.213,473.291 908.321,431" style="fill:none;stroke-width:42px;stroke:rgb(0,88,255);"/>
-			        <path d="M623,507.706C585.67,434.711 511.01,288.721 571,255.269C635.999,219.022 821.981,432.4 839.317,452" style="fill:none;stroke-width:42px;stroke:white;"/>
-			    </g>
-			</svg>
+	  	<div class="container">
+	      	<img class="me" src="img/Annie.jpg"><br><br>
+			<div class="description"> Annie Chen is a <span class="job">designer</span> + <span class="job">front-end developer</span>. <br></div><br>
 
-			<div class="Name_Title">
-				Annie Chen
-			</div>
-<!-- 			<center><i id="Down" class="fa fa-chevron-down fa-3x"></i></center>
- -->		</div>
-
-		<!--NAVIGATION BAR-->
-		<div class="Navigation">
-			<div id="mobile-menu">
-
-			    <ul>
-			    	<div class="close-btn"><i class="fa fa-times fa-3x"></i> </div>
-			   		 <a href="#AboutLink"><li id="AMenu">ABOUT</li></a>
-			        <a href="#ProjectLink"><li id="PMenu">PROJECTS</li></a>
-			        <a href="#ContactLink"><li id="CMenu">CONTACT</li></a>
-			        <a href="./Annie_Chen_Resume.pdf" target="_blank" class="RMenu"><li class="RMenu">RESUME</li></a>
-			     </ul>
-		    </div>
-	  
-		  <header>
-		    <a href="#Entrance"><div id="logo"><img src="img/Logo.png"></div></a>
-
-		    <div class="menu-btn">
-		      <i class="fa fa-bars"></i>
-		    </div>
-		    
-		    <nav class="desktop">
-		      <ul>
-		        <li><a id="ADeskMenu" href="#AboutLink">ABOUT</a></li>
-		        <li><a id="PDeskMenu" href="#ProjectLink">PROJECTS</a></li>
-		        <li><a id="CDeskMenu" href="#ContactLink">CONTACT</a></li>
-		        <li><a href="./Annie_Chen_Resume.pdf" target="_blank">RESUME</a></li>
-
-		      </ul>
-		    </nav>
-		  </header>
+			<div class="description">She is currently working at <span class="job">NASA - Jet Propulsion Laboratory</span>.</div>
+			<br><br><br>
+			<div class="description"> ❤ </div>
+			<br><br>
+			<div class="connect">Let's Connect!</div><br>
+			<a href="https://ninipics.tumblr.com" class="fa fa-camera fa-3x"></a>
+			&nbsp;&nbsp;
+			<a href="https://codepen.io/NiniC/" class="fa fa-codepen fa-3x"></a>
+			&nbsp;&nbsp;
+			<a href="mailto:anniechen310@gmail.com?subject=Contacted%20from%20aninic.github.io&amp;body=Name%3A%0A%0AInquiry%3A"><i class="fa fa-envelope-square fa-5x"></i></a>
+			&nbsp;&nbsp;
+			<a href="https://www.linkedin.com/in/anniech" class="fa fa-linkedin-square fa-5x"></a> 
+			&nbsp;&nbsp;
+			<a href="https://github.com/aninic" class="fa fa-github-square fa-3x"></a>
+			&nbsp;&nbsp;
+			<a href="https://behance.net/aninic" class="fa fa-behance-square fa-3x"></a>
+			<br><br>
 		</div>
-
-
-	 <!-- ABOUT SECTION-->
-	 <a id="AboutLink"></a>
-		 <div class="About">
-	 		 	<div id="Title">
-					ABOUT ME
-				</div>
-
-			 <div id="Goal" class="Goal">
-			 	Interaction/UI/UX Design <br>+<br> Web Developer
-			 	</div>
-
-				<hr>
-			<div id="Education" class="Education">
-			 	<ul class="flex-container">
-					  	<li class="flex-item1">
-						  	<i id="Icon" class="fa fa-graduation-cap"></i> 
-							<br>
-							<span id="IconWords">EDUCATION</span>
-						</li>
-					  	<li class="flex-item2">UC SAN DIEGO (Class of 2017)
-						    	<br>
-						    	B.S. Computer Science
-						    	<br>
-						    	Area Study: Cognitive Science - Human Computer Interaction
-						    	<br>
-						    	Provost's + Warren Honors
-						</li>
-
-					  	<li class="flex-item1">
-					  		<i id="Icon" class="fa fa-code"></i>
-					    	<br>
-					    	<span id="IconWords">INDUSTRY</span></li>
-					  	<li class="flex-item2">
-					  		NASA JPL - Full Stack Web Developer
-					  		<br>
-					  		TERADATA - Full Stack Java Developer
-					    	<br>
-					    	GOOGLE - CodeU + Android Program
-					    	<br>
-					    	GLOBAL TIES - Web Developer
-					    </li>
-
-					  	<li class="flex-item1">
-					  		<i id="Icon" class="fa fa-user"></i>
-					    	<br>
-					    	<span id="IconWords">LEADERSHIP</span></li>
-					  	<li class="flex-item2">
-					  		ENGAGING GIRLS IN STEM - Ambassador
-					  		<br>
-					  		UCSD APSA - Board Member
-					  		<br>
-					  		CSE DEPARTMENT - Tutor
-					    	<br>
-					    	WRITING CENTER - Mentor
-						</li>
-				</ul>
-					<hr>
-
-			<div class="Profile">
-		 		<img id="ProfilePic" src="img/Portrait.jpg">
-		 	</div>
-			<a href="./Annie_Chen_Resume.pdf" target="_blank">
- 				<div id="Resume_Button Shadow" class="Resume_Button">RESUME</div>
-	 		</a>
-	 		<br>
-		</div>
-	</div>
-
-	<a id="ProjectLink"></a>
-<!--PROJECTS-->
-	<div class="Projects">
-		<div id="Title">
-			PROJECTS
-		</div>
-		<ul class="flex-container2">
-			<li class="flex-item3">
-				<a href="https://codepen.io/NiniC/">
-					<div id="Project_Container">
-					<img id="Project_Logo" src="img/Codepen.png">
-					<br>
-					CODE ART
-					<br><hr>
-					<i id="Project_Info">My front-end fun.</i>
-				</div>
-				</a>
-			</li>
-			<li class="flex-item3">
-				<a href="https://somethingedgyart.tumblr.com">
-					<div id="Project_Container">
-					<img id="Project_Logo" src="img/SomethingEdgyArt.png">
-					<br>
-					SOMETHING EDGY
-					<br><hr>
-					<i id="Project_Info">Minimalistic graphic design.</i>
-				</div>
-				</a>
-			</li>
-		</ul>
-		<ul class="flex-container2">
-			<li class="flex-item3">
-				<a href="http://www.labelfables.com">
-					<div id="Project_Container">
-					<img id="Project_Logo" src="img/Label_Fables_Logo.png">
-					<br>
-					LABEL FABLES
-					<br><hr>
-					<i id="Project_Info">Stigma-awareness web forum.</i>
-				</div>
-				</a>
-			</li>
-		  	<li class="flex-item3">
-		  		<a href="https://tritonbattles.herokuapp.com/">
-		  			<div id="Project_Container">
-			  		<img id="Project_Logo" src="img/Triton_Battles_Logo.png">
-					<br>
-					TRITON BATTLES
-					<br><hr>
-					<i id="Project_Info">Online flashcard database.</i>
-				</div>
-				</a>
-		  	</li>
-			
-
-<!-- 			<li class="flex-item3">
-				<a href="https://github.com/Nevvea7/NomNom">
-					<div id="Project_Container">
-					<img id="Project_Logo" src="img/NomNom_Logo.png">
-					<br>
-					NOMNOM
-					<br><hr>
-					<i id="Project_Info">Randomized restaurant finder.</i>
-				</div>
-				</a>
-			</li> -->
-
-		</ul>
-	</div>
-	<a id="ContactLink"></a>
-
-<!-- CONTACT ME -->
-	<div class="Contact_Me">
-
-		<div id="Title">
-			CONTACT ME
-		</div>
-	</div>
-
-	<!--Credentials-->
-	<div class="Credentials">
-		<div class="Footer_Pic">
-		<img src="img/Footer_Portrait.jpg">
-	</div>
-		<div class="Footer_Message">This needn't be the end. Shoot me a message!</div> 
-
-
-		<a href="mailto:anniechen310@gmail.com?subject=Contacted%20from%20aninic.github.io&amp;body=Name%3A%0A%0AInquiry%3A"><i class="fa fa-envelope-square fa-4x"></i></a>
-		&nbsp;&nbsp;
-
-		<a href="https://www.linkedin.com/in/anniech" class="fa fa-linkedin-square fa-4x"></a> 
-		&nbsp;&nbsp;
-		
-		<a href="https://codepen.io/NiniC/" class="fa fa-codepen fa-4x"></a>
-		&nbsp;&nbsp;
-
-		<a href="https://github.com/aninic" class="fa fa-github-square fa-4x"></a>
-		&nbsp;&nbsp;
-		
-		<a href="https://somethingedgyart.tumblr.com" class="fa fa-tumblr-square fa-4x"></a>
-
-				<br><br>
-		<i class="fa fa-copyright"></i> Annie Chen, 2018.
-
-	</div>
-	<br>
-
 	</body>
+	
+	<footer>
+		<hr> <i class="fa fa-copyright"></i> Annie Chen, 2018.
+	</footer>
 
 </html>
