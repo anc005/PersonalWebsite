@@ -112,7 +112,7 @@ iframe{
       height:350px;
     }
     img.me{
-      width: 100%;
+      width: 80%;
       height: auto;
     }
     .fa{
@@ -122,8 +122,8 @@ iframe{
       font-size: 3.7vw;
     }
     body{
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 3%;
+      padding-right: 3%;
     }
 }
 
