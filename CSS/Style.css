@@ -67,7 +67,7 @@ iframe{
 }
 
 /***************** Mobile ************************/
-@media only screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
 
     .flex-item  {
       width: 80%;
