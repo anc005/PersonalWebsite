@@ -119,7 +119,10 @@ iframe{
       width: 30px;
     }
     .description{
-      font-size: 3.7vw;
+      font-size: 4vw;
+    }
+    .connect{
+      font-size: 5vw;
     }
     body{
       padding-left: 3%;
