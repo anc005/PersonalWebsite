@@ -59,6 +59,35 @@ img.width{
 a:hover{
   color: orange;
 }
+/***************Contact / Home *********************/
+.container{
+  text-align: center;
+
+}
+img.me{
+  height: 400px;
+  width: auto;
+}
+.fa:hover{
+  color: orange;
+}
+.description{
+  font-size: 25px;
+}
+.connect{
+  font-size: 30px;
+}
+.job{
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: orange;
+  color: black;
+  border-radius:5px;
+  border-color: yellow;
+  display: inline-block;
+}
 /**************** Youtube Videos ********************/
 iframe{
   margin-left: 15%;
@@ -67,8 +96,7 @@ iframe{
 }
 
 /***************** Mobile ************************/
-@media all and (max-width: 750px) {
-
+@media all and (max-width: 900px) {
     .flex-item  {
       width: 80%;
       padding: 10px;
@@ -83,6 +111,16 @@ iframe{
       margin-left: 5%;
       width: 90%;
       height:350px;
+    }
+    img.me{
+      width: 100%;
+      height: auto;
+    }
+    .fa{
+      width: 30px;
+    }
+    .description{
+      font-size: 3.7vw;
     }
 }
 
