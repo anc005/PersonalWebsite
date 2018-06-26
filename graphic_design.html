@@ -3,10 +3,11 @@
 <html>
   <head>  
     <title>Annie Chen</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Modal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script type="text/javascript" src="./JS/Modal.js"></script> 
   </head>
   <header>
     <a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
@@ -24,28 +25,47 @@
     <div class="title">Style 1 </div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="graphic_design/giraffe.jpg">
+        <img src="graphic_design/giraffe.jpg" onclick="show_modal('graphic_design/giraffe.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="graphic_design/Turtle.png">
+        <img src="graphic_design/Turtle.png" onclick="show_modal('graphic_design/Turtle.png', '')">
       </div>
         <div class="flex-item">
-        <img src="graphic_design/elephant.png">
+        <img src="graphic_design/elephant.png" onclick="show_modal('graphic_design/elephant.png', '')">
       </div>
     </div>
     <br><br><br><br><br>
     <div class=" title">Style 2 </div>
     <div class="flex-container">
         <div class="flex-item">
-        <img src="graphic_design/Donut.png">
+        <img src="graphic_design/Donut.png" onclick="show_modal('graphic_design/Donut.png', '')">
       </div>
       <div class="flex-item">
-        <img src="graphic_design/Swan.png">
+        <img src="graphic_design/Swan.png" onclick="show_modal('graphic_design/Swan.png', '')">
       </div>
       <div class="flex-item">
-        <img src="graphic_design/Whale.png">
+        <img src="graphic_design/Whale.png" onclick="show_modal('graphic_design/Whale.png', '')">
       </div>
     </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      var modal = document.getElementById('myModal');
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+
+    </script>
   </body>
 
   <footer>

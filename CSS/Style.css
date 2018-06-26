@@ -30,6 +30,9 @@ body{
   transition-property: opacity;
   transition-duration: .5s;
 }
+.flex-item:hover{
+  cursor: pointer;
+}
 img{
   border-radius: 5px;
   width: 100%;

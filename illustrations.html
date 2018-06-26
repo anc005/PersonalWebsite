@@ -3,10 +3,11 @@
 <html>
   <head>  
     <title>Annie Chen</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Modal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script type="text/javascript" src="./JS/Modal.js"></script> 
   </head>
   <header>
     <a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
@@ -24,41 +25,60 @@
     <div class=" title">Cross Hatching</div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="illustrations/female_head.jpg">
+        <img src="illustrations/female_head.jpg" onclick="show_modal('illustrations/full_size/female_head.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="illustrations/vase.jpg">
+        <img src="illustrations/vase.jpg" onclick="show_modal('illustrations/full_size/vase.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="illustrations/man_head.jpg">
+        <img src="illustrations/man_head.jpg"  onclick="show_modal('illustrations/full_size/man_head.jpg', '')">
       </div>
     </div>
     <br><br><br><br><br>
     <div class="title">Acrylic Painting</div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="illustrations/venice.jpg">
+        <img src="illustrations/venice.jpg" onclick="show_modal('illustrations/full_size/venice.jpg', '')">
       </div>
         <div class="flex-item">
-        <img src="illustrations/horse.jpg">
+        <img src="illustrations/horse.jpg" onclick="show_modal('illustrations/full_size/horse.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="illustrations/flowers.jpg">
+        <img src="illustrations/flowers.jpg" onclick="show_modal('illustrations/full_size/flowers.jpg', '')">
       </div>
     </div>
     <br><br><br><br><br>
     <div class="title">Digital</div>
     <div class="flex-container">
       <div class="flex-item">
-        <img class="wide" src="illustrations/GreenBuggy.png">
+        <img class="wide" src="illustrations/GreenBuggy.png" onclick="show_modal('illustrations/full_size/GreenBuggy.png', '')">
       </div>
       <div class="flex-item">
-        <img class="wide" src="illustrations/husky.jpg">
+        <img class="wide" src="illustrations/husky.jpg" onclick="show_modal('illustrations/full_size/husky.jpg', '')">
       </div>
       <div class="flex-item">
-        <img class="wide" src="illustrations/puss_in_boots.jpg">
+        <img class="wide" src="illustrations/puss_in_boots.jpg" onclick="show_modal('illustrations/full_size/puss_in_boots.jpg', '')">
       </div>
     </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      var modal = document.getElementById('myModal');
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+
+    </script>
   </body>
 
   <footer>

@@ -3,10 +3,12 @@
 <html>
 	<head>	
   	<title>Annie Chen</title>
-    <link rel="stylesheet" type="text/css" href="CSS/Style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Modal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <script type="text/javascript" src="./JS/Modal.js"></script> 
 	</head>
 
   <header>
@@ -25,26 +27,26 @@
     <div class="title"> Horizons </div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="img/seattle.jpg"><!-- <br> Elliott Bay | Location: Seattle, Washington -->
+        <img src="img/seattle.jpg" onclick="show_modal('img/full_size/seattle.jpg', 'Elliott Bay | Location: Seattle, Washington')">
       </div>
       <div class="flex-item">
-        <img src="img/chicago.jpg"><!-- <br> The Vast | Location: Chicago, Illinois -->
+        <img src="img/chicago.jpg" onclick="show_modal('img/full_size/chicago.jpg', 'The Vast | Location: Chicago, Illinois')">
       </div>
       <div class="flex-item">
-        <img src="img/san_diego.jpg"><!-- <br> Skyline | Location: Harbor Island - San Diego, California -->
+        <img src="img/san_diego.jpg" onclick="show_modal('img/full_size/san_diego.jpg', 'Skyline | Location: Harbor Island - San Diego, California')">
       </div>
     </div>
     <br><br><br><br><br>
     <div class=" title"> BIRDS </div>
     <div class="flex-container">
         <div class="flex-item">
-        <img src="img/emu.jpg"><!-- <br> Immortal | Location: LA County Fair, California -->
+        <img src="img/emu.jpg" onclick="show_modal('img/full_size/emu.jpg', 'Immortal | Location: LA County Fair, California')">
       </div>
       <div class="flex-item">
-        <img src="img/penguin.jpg"><!-- <br> Swimming Penguin | Location: SeaWorld - San Diego, Oregon -->
+        <img src="img/penguin.jpg" onclick="show_modal('img/full_size/penguin.jpg', 'Swimming Penguin | Location: SeaWorld - San Diego, Oregon')">
       </div>
       <div class="flex-item">
-        <img src="img/duck.jpg"><!-- <br> American Coot Chick | Location: Echo Park, California -->
+        <img src="img/duck.jpg" onclick="show_modal('img/full_size/duck.jpg', 'American Coot Chick | Location: Echo Park, California')">
       </div>
     </div>
     <br><br><br><br><br>
@@ -52,13 +54,13 @@
     <div class=" title"> ART </div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="img/29rooms.jpg"><!-- <br> Planned Parenthood| Location: 29Rooms - Refinery29, California -->
+        <img src="img/29rooms.jpg" onclick="show_modal('img/full_size/29rooms.jpg', 'Planned Parenthood | Location: 29Rooms - Refinery29, California')">
       </div>
       <div class="flex-item">
-        <img src="img/chihuly.jpg"><!-- <br> Floral Skies | Location: Chihuly Garden and Glass - Seattle, Washington -->
+        <img src="img/chihuly.jpg" onclick="show_modal('img/full_size/chihuly.jpg', 'Floral Skies | Location: Chihuly Garden and Glass - Seattle, Washington')">
       </div>
       <div class="flex-item">
-        <img src="img/portland.jpg"><!-- <br> Jet Fence | Location: Saturday Market - Portland, Oregon -->
+        <img src="img/portland.jpg" onclick="show_modal('img/full_size/portland.jpg', 'Jet Fence | Location: Saturday Market - Portland, Oregon')">
       </div>
     </div>
     <br><br><br><br><br>
@@ -66,16 +68,36 @@
     <div class=" title"> Portrait </div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="img/shelby1.jpg">
+        <img src="img/shelby1.jpg" onclick="show_modal('img/full_size/shelby1.jpg', 'Shelby')">
       </div>
       <div class="flex-item">
-        <img src="img/sarah.jpg">
+        <img src="img/sarah.jpg" onclick="show_modal('img/full_size/sarah.jpg', 'Sarah')">
       </div>
       <div class="flex-item">
-        <img src="img/steve.jpg">
+        <img src="img/steve.jpg" onclick="show_modal('img/full_size/steve.jpg', 'Steve')">
       </div>
     </div>
     <br><br><br><br><br>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <script>
+      var modal = document.getElementById('myModal');
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+
+    </script>
 
 	</body>
 
