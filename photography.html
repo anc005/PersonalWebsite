@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
+<!DOCTYPE html>
 	<head>	
   	<title>Annie Chen</title>
     <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
@@ -79,26 +79,12 @@
     </div>
     <br><br><br><br><br>
 
-    <!-- The Modal -->
+    <!-- Modal -->
     <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
+      <div class="close" onclick="closeModal()">&times;</div>
+      <img class="modal-content" id="pic">
       <div id="caption"></div>
     </div>
-
-    <script>
-      var modal = document.getElementById('myModal');
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() { 
-          modal.style.display = "none";
-      }
-
-    </script>
-
 	</body>
 
   <footer>
