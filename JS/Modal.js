@@ -3,6 +3,7 @@ window.onclick = function(event) {
 	var modal = document.getElementById('myModal');
 	var modalImg = document.getElementById("pic");
 	var cap = document.getElementById("caption");
+    var b = document.getElementsByTagName('body')[0];
 
 	if ((event.target == cap) || (event.target == modal)) {
 	  modal.style.display = "none";
