@@ -6,6 +6,7 @@ window.onclick = function(event) {
 
 	if ((event.target == cap) || (event.target == modal)) {
 	  modal.style.display = "none";
+	  b.style.overflow = "auto";
 	}
 }
 //Display modal on click of image
