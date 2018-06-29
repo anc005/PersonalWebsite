@@ -48,12 +48,6 @@ img.width{
   border-radius: 5px;
 
 }
-/*.flex-item:hover{
-  opacity: .4;
-  transition-property: opacity;
-  transition-duration: .5s;
-  cursor: pointer;
-}*/
 .title{
   font-family: 'Quicksand', sans-serif;
   font-size: 60px;
