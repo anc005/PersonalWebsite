@@ -28,4 +28,3 @@ function closeModal(){
     modal.style.display = "none";
     b.style.overflow = "auto";
 }
-

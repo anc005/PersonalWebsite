@@ -16,7 +16,7 @@
     <a href="graphic_design.html">Graphic Design</a>  
     <span style="color:yellow; text-transform: uppercase; padding: 10px">Illustrations</span>  
     <a href="code.html">Code</a>  
-    <a href="Annie_Chen_Resume.pdf" target="_blank">Resume</a>  
+    <a href="resume.html">Resume</a>  
     <a href="contact.html">Contact</a>
     <hr>
   </header>
@@ -25,39 +25,39 @@
     <div class=" title">Cross Hatching</div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="illustrations/female_head.jpg" onclick="show_modal('illustrations/full_size/female_head.jpg', '')">
+        <img data-src="illustrations/female_head.jpg" alt="" onclick="show_modal('illustrations/full_size/female_head.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="illustrations/vase.jpg" onclick="show_modal('illustrations/full_size/vase.jpg', '')">
+        <img data-src="illustrations/vase.jpg" alt="" onclick="show_modal('illustrations/full_size/vase.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="illustrations/man_head.jpg"  onclick="show_modal('illustrations/full_size/man_head.jpg', '')">
+        <img data-src="illustrations/man_head.jpg"  alt="" onclick="show_modal('illustrations/full_size/man_head.jpg', '')">
       </div>
     </div>
     <br><br><br><br><br>
     <div class="title">Acrylic Painting</div>
     <div class="flex-container">
       <div class="flex-item">
-        <img src="illustrations/venice.jpg" onclick="show_modal('illustrations/full_size/venice.jpg', '')">
+        <img data-src="illustrations/venice.jpg" alt="" onclick="show_modal('illustrations/full_size/venice.jpg', '')">
       </div>
         <div class="flex-item">
-        <img src="illustrations/horse.jpg" onclick="show_modal('illustrations/full_size/horse.jpg', '')">
+        <img data-src="illustrations/horse.jpg" alt="" onclick="show_modal('illustrations/full_size/horse.jpg', '')">
       </div>
       <div class="flex-item">
-        <img src="illustrations/flowers.jpg" onclick="show_modal('illustrations/full_size/flowers.jpg', '')">
+        <img data-src="illustrations/flowers.jpg" alt="" onclick="show_modal('illustrations/full_size/flowers.jpg', '')">
       </div>
     </div>
     <br><br><br><br><br>
     <div class="title">Digital</div>
     <div class="flex-container">
       <div class="flex-item">
-        <img class="wide" src="illustrations/GreenBuggy.png" onclick="show_modal('illustrations/full_size/GreenBuggy.png', '')">
+        <img class="wide" data-src="illustrations/GreenBuggy.png" alt="" onclick="show_modal('illustrations/full_size/GreenBuggy.png', '')">
       </div>
       <div class="flex-item">
-        <img class="wide" src="illustrations/husky.jpg" onclick="show_modal('illustrations/full_size/husky.jpg', '')">
+        <img class="wide" data-src="illustrations/husky.jpg" alt="" onclick="show_modal('illustrations/full_size/husky.jpg', '')">
       </div>
       <div class="flex-item">
-        <img class="wide" src="illustrations/puss_in_boots.jpg" onclick="show_modal('illustrations/full_size/puss_in_boots.jpg', '')">
+        <img class="wide" data-src="illustrations/puss_in_boots.jpg" alt="" onclick="show_modal('illustrations/full_size/puss_in_boots.jpg', '')">
       </div>
     </div>
 
@@ -67,6 +67,16 @@
       <img class="modal-content" id="pic">
       <div id="caption"></div>
     </div>
+
+    <!-- Loading -->
+    <script>
+      [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+            img.removeAttribute('data-src');
+        };
+    });
+    </script>
   </body>
 
   <footer>
