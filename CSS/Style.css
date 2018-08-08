@@ -109,7 +109,7 @@ iframe{
     }
     .title{
       font-size: 8vw;
-      padding-left: 10%;
+      padding-left: 10px;
       line-height: normal;
       width: 80%;
     }
