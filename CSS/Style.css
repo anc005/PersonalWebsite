@@ -62,7 +62,7 @@ img.width{
   line-height: 2;
   text-transform: uppercase;
 }
-a:hover{
+header > a:hover{
  text-decoration: line-through;
 }
 .artSubtitle{
