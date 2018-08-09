@@ -63,7 +63,13 @@ img.width{
   text-transform: uppercase;
 }
 a:hover{
-  color: orange;
+ text-decoration: line-through;
+}
+.artSubtitle{
+  color: grey !important;
+}
+.artSubtitle:hover{
+ text-decoration: line-through;
 }
 /***************Contact / Home *********************/
 .container{
