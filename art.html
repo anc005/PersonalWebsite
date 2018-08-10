@@ -6,42 +6,32 @@
 	  	<link rel="stylesheet" type="text/css" href="./CSS/Style.css">
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	  	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
-	    <style>
-	      .subtitles{
-	      	font-size: 18px;
-	      	color: rgba(255, 255, 255, 0.5);
-	      }
-	      h1{
-	      	line-height: 2;
-	      }
-	      h2{
-	      	line-height: 0.5;
-	      }
-	      .aboutme{
-	      	width:500px;
-	      }
-	      .artTitle{
-	      	font-size: 30px;
-	      }
-	      .flex-item>a{
-	      	color:white !important;
-	      	padding: 0px;
-	      }
-	      @media all and (max-width: 900px) {
-		      h1{
-		      	line-height: normal;
-		      }
-		      h2{
-		      	line-height: normal;
-		      }
-		      .aboutme{
-
-		      	width: 90%;
-		      }
-	      }
-	    </style>
 	</head>
+	<style>
+		.mobile{
+			display: none;
+		}
+		.web{
+			display: block;
+		}
+		.artTitle{
+			text-align: center;
+			font-size: 3vw;
+		}
+		@media all and (max-width: 900px) {
+			.artTitle{
+				font-size: 10vw;
+			}
+			.mobile{
+				display: block;
+			}
+			.web{
+				display: none;
+			}
 
+
+		}
+	</style>
 	<header>
 		<a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
 		<br>
@@ -55,20 +45,24 @@
 	<body>
 	    <div class="flex-container">
 	      <div class="flex-item"><a href="photography.html">
+	      	<div class="artTitle mobile">PHOTOGRAPHY</div>
 	      	<img src="img/chicago.jpg">
-	        <div class="artTitle"> PHOTOGRAPHY</div></a>
+	      	<div class="artTitle web">PHOTOGRAPHY</div>
+	      	</a>
 	      </div>
 	      <div class="flex-item"><a href="graphic_design.html">
+	      	<div class="artTitle mobile">GRAPHIC DESIGN</div>
 	         <img src="graphic_design/elephant.png">
-	         <div class="artTitle">GRAPHIC DESIGN</div></a>
+	         <div class="artTitle web">GRAPHIC DESIGN</div></a>
 	      </div>
 	      <div class="flex-item"><a href="illustrations.html">
+	      	<div class="artTitle mobile">ILLUSTRATION</div>
 	      	<img src="illustrations/female_head.jpg"/>
-	        <div class="artTitle">ILLUSTRATION</div></a>
+	        <div class="artTitle web">ILLUSTRATION</div></a>
 	      </div>
 	    </div>
 	</body>
-
+	<br>
 	<footer>
 		 <i class="fa fa-copyright"></i> Annie Chen, 2018.
 	</footer>
