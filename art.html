@@ -16,9 +16,17 @@
 		}
 		.artTitle{
 			text-align: center;
-			font-size: 3vw;
+			font-size: 2.6vw;
+
 		}
-		@media all and (max-width: 900px) {
+		.flex-container{
+			width: 70% !important;
+			margin-left: 15% !important;
+		}
+		.flex-item{
+			width: 44% !important;
+		}
+		@media all and (max-width: 600px) {
 			.artTitle{
 				font-size: 10vw;
 			}
@@ -28,21 +36,27 @@
 			.web{
 				display: none;
 			}
-
-
+			.flex-container{
+				width: auto !important;
+				margin-left: 0 !important;
+			}
+			.flex-item{
+				width: 100% !important;
+			}
 		}
 	</style>
 	<header>
 		<a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
 		<br>
 		<span style="color:yellow; text-transform: uppercase; padding: 10px">Art</span>
-		<a href="code.html">Code</a>  
+		<a href="code.html">Applications</a>  
 		<a href="resume.html">Resume</a>  
 		<a href="contact.html">Contact</a>
 	    <br><br>
 	    <a class="artSubtitle" href="photography.html">Photography</a> 
 	    <a class="artSubtitle" href="graphic_design.html">Graphic Design</a>
 	    <a class="artSubtitle" href="illustrations.html">Illustration</a>
+	    <a class="artSubtitle" href="code_art.html">Code</a>
 	</header>
 
 	<body>
@@ -58,10 +72,17 @@
 	         <img src="graphic_design/elephant.png">
 	         <div class="artTitle web">GRAPHIC DESIGN</div></a>
 	      </div>
+	    </div>
+	    <div class="flex-container">
 	      <div class="flex-item"><a href="illustrations.html">
 	      	<div class="artTitle mobile">ILLUSTRATION</div>
 	      	<img src="illustrations/female_head.jpg"/>
 	        <div class="artTitle web">ILLUSTRATION</div></a>
+	      </div>
+	      <div class="flex-item"><a href="code_art.html">
+	      	<div class="artTitle mobile">CODE</div>
+	      	<img src="code/chicken.png"/>
+	        <div class="artTitle web">CODE</div></a>
 	      </div>
 	    </div>
 	</body>
