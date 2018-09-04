@@ -17,7 +17,7 @@ body{
 }
 .flex-container {
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
   max-width: 1100px;
   padding: 0;
   /*margin: 0;*/
@@ -60,7 +60,7 @@ img.width{
 }
 .title{
   font-family: 'Quicksand', sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   padding-left: calc(50% - 550px);
   line-height: 2;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ img.me{
   font-size: 25px;
 }
 .connect{
-  font-size: 30px;
+  font-size: 40px;
 }
 .job{
   padding-left: 3px;

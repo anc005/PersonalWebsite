@@ -8,28 +8,30 @@
 	  	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 	</head>
 	<style>
-		.mobile{
-			display: none;
+		.flex-container{
+			max-width: 750px;
 		}
-		.web{
-			display: block;
+		.flex-item{
+			width: 49.5%;
 		}
-		.artTitle{
-			text-align: center;
-			font-size: 2vw;
-			margin-left: 20px;
-
+		a.misc{
+			padding-left: 0px;
+			padding-bottom: 2px;
+		}
+		img.code_art{
+			width: calc(100% - 2px);
+			border: 1px solid grey;
 		}
 		@media all and (max-width: 900px) {
+			.flex-container{
+				max-width: 100%;
+			}
+			.flex-item{
+				width: 100%;
+			}
 			.artTitle{
 				font-size: 10vw;
 				margin-left: 0px;
-			}
-			.mobile{
-				display: block;
-			}
-			.web{
-				display: none;
 			}
 		}
 	</style>
@@ -41,38 +43,30 @@
 		<a href="resume.html">Resume</a>  
 		<a href="contact.html">Contact</a>
 	    <br><br>
-	    <div class="mobile">
-		    <a class="artSubtitle" href="photography.html">Photography</a> 
-		    <a class="artSubtitle" href="graphic_design.html">Graphic Design</a>
-		    <a class="artSubtitle" href="illustrations.html">Illustration</a>
+    	<div style="color:grey">
+		    <a class="artSubtitle" href="photography.html">Photography</a> /
+		    <a class="artSubtitle" href="graphic_design.html">Graphic Design</a> /
+		    <a class="artSubtitle" href="illustrations.html">Illustration</a> /
 		    <a class="artSubtitle" href="code_art.html">Code</a>
 		</div>
 	</header>
 
 	<body>
 	    <div class="flex-container">
-	      <div class="flex-item"><a href="photography.html">
-	      	<div class="artTitle mobile">PHOTOGRAPHY</div>
-	      	<img src="img/chicago.jpg">
-	      	<div class="artTitle web">PHOTOGRAPHY</div>
-	      	</a>
+	      <div class="flex-item"><a class="misc" href="photography.html">
+	      	<img src="img/chicago.jpg"></a>
 	      </div>
-	      <div class="flex-item"><a href="graphic_design.html">
-	      	<div class="artTitle mobile">GRAPHIC DESIGN</div>
-	         <img src="graphic_design/elephant.png">
-	         <div class="artTitle web">GRAPHIC DESIGN</div></a>
+	      <div class="flex-item"><a class="misc" href="graphic_design.html">
+	         <img src="graphic_design/elephant.png"></a>
 	      </div>
 	    </div>
+
 	    <div class="flex-container">
-	      <div class="flex-item"><a href="illustrations.html">
-	      	<div class="artTitle mobile">ILLUSTRATION</div>
-	      	<img src="illustrations/female_head.jpg"/>
-	        <div class="artTitle web">ILLUSTRATION</div></a>
+	      <div class="flex-item"><a class="misc" href="illustrations.html">
+	      	<img src="illustrations/female_head.jpg"/></a>
 	      </div>
-	      <div class="flex-item"><a href="code_art.html">
-	      	<div class="artTitle mobile">CODE</div>
-	      	<img src="code/chicken.png"/>
-	        <div class="artTitle web">CODE</div></a>
+	      <div class="flex-item"><a class="misc" href="code_art.html">
+	      	<img class="code_art" src="code/lights.png"/></a>
 	      </div>
 	    </div>
 	</body>

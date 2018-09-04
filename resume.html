@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <style>
-      .container{
-        width: 70%;
-        margin-left: 4.5%;
-      }
-      .work{
-        text-align: left;
-        margin-left: 20%;
-      }
       .resume{
         font-size: 40px;
         padding: 10px;
@@ -34,17 +26,44 @@
         padding-top: 20px;
         padding-bottom: 60px;
       }
+      h3{
+        color:grey;
+      }
+      .flex-item{
+        padding: 30px 0;
+        width: 47.5%;
+        height: 120px;
+        margin: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        border-radius: 5px;
+        line-height: 160px;
+      }
+      .flex-item:hover{
+        cursor: auto !important;
+        opacity: 1 !important;
+        transition-duration: 0s !important;
+      }
+      div.words {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
       @media all and (max-width: 900px) {
-        .container{
+        .flex-item{
+          padding: 20px 0;
           width: 100%;
-          margin-left: -8%;
+          height: auto;
         }
         .title{
           padding-bottom: 8px;
           margin-left: -5% !important;
         }
-        h1{
-          font-size: 5vw;
+        h2{
+          font-size: 4vw;
         }
         h3{
         font-size: 3.6vw;
@@ -54,9 +73,6 @@
         }
         .resume_padding{
           padding-top: 0px;
-        }
-        .work{
-          margin-left: 10%;
         }
       }
     </style>
@@ -68,57 +84,81 @@
     <a href="code.html">Products</a>
     <span style="color:yellow; text-transform: uppercase; padding: 10px">Resume</span> 
     <a href="contact.html">Contact</a>
-    <!-- <hr> -->
   </header>
 
   <body>
     <div class="resume_padding">
       <center><a class="resume" href="Annie_Chen_Resume.pdf" target="_blank">Download Resume</a></center>
     </div>
+
     <div class="title">Selected Experience </div>
-    <div class="container">
-      <div class="work"><h1>UI & UX Designer, Front-End Developer</h1>
-        <h3>NASA - Jet Propulsion Laboratory</h3><br>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2><nobr>UI & UX Designer</nobr>, <nobr>Front-End Developer</nobr></h2>
+        <h3>NASA - Jet Propulsion Laboratory</h3></div>
       </div>
-      <div class="work"><h1>Freelance Graphic Designer</h1>
-        <h3>Dribbble</h3><br>
-      </div>   
-      <div class="work"><h1>Freelance Digital Photographer</h1>
-        <h3>Annie Chen Photography</h3><br>
-      </div>   
-      <div class="work"><h1>UI & UX Designer, Software Engineering Intern </h1>
-        <h3>NASA - Jet Propulsion Laboratory</h3><br>
+      <div class="flex-item">
+        <div class="words"><h2>Freelance Graphic Designer</h2>
+        <h3>Dribbble</h3></div>
       </div>
-      <div class="work"><h1>Software Engineering Intern </h1>
-        <h3>Teradata</h3><br>
-      </div>
-      <div class="work"><h1>Web Developer, Marketing Assistant</h1>
-        <h3>Global TIES @UCSD</h3><br>
-      </div>       
     </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2>Freelance Digital Photographer</h2>
+        <h3>Annie Chen Photography</h3></div>
+      </div>
+      <div class="flex-item">
+        <div class="words"><h2>UI Designer, Software Engineering Intern</h2>
+        <h3>NASA - Jet Propulsion Laboratory</h3></div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2><nobr>Web Developer</nobr>, <nobr>Marketing Assistant</nobr></h2>
+        <h3>Global TIES @UCSD</h3></div>
+      </div>
+      <div class="flex-item">
+        <div class="words"><h2>Software Engineering Intern </h2>
+        <h3>Teradata</h3></div>
+      </div>
+    </div>
+    <br><br>
     <div class="title">Leadership </div>
-    <div class="container">
-      <div class="work"><h1>Leadership Board/Co-Founder</h1>
-        <h3>Women in 600 - Chat & Chew @NASA - Jet Propulsion Laboratory</h3><br>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2>Leadership Board, <nobr>Co-Founder</nobr></h2>
+        <h3>Women Chat & Chew @NASA - Jet Propulsion Laboratory</h3></div>
       </div>
-      <div class="work"><h1>UX Product Reviewer</h1>
-        <h3>UX Review Team @NASA - Jet Propulsion Laboratory</h3><br>
-      </div> 
-      <div class="work"><h1>Panelist</h1>
-        <h3>sheCodes @NASA - Jet Propulsion Laboratory</h3><br>
-      </div>  
-      <div class="work"><h1>STEM Ambassador</h1>
-        <h3>"Engaging Girls in STEM" @Los Angeles County of Education</h3><br>
-      </div>  
-      <div class="work"><h1>Leadership Board</h1>
-        <h3>Asian & Pacific-Islander Student Alliance @UCSD</h3><br>
-      </div> 
-      <div class="work"><h1>Mentor </h1>
-        <h3>Writing Center @UCSD</h3><br>
+      <div class="flex-item">
+        <div class="words"><h2>UX Product Reviewer</h2>
+        <h3>UX Review Team @NASA - Jet Propulsion Laboratory</h3></div>
       </div>
-      <div class="work"><h1>Tutor</h1>
-        <h3>Computer Science Department @UCSD</h3><br>
-      </div>    
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2>Panelist</h2>
+        <h3>sheCodes @NASA - Jet Propulsion Laboratory</h3></div>
+      </div>
+      <div class="flex-item">
+        <div class="words"><h2>STEM Ambassador</h2>
+        <h3>Engaging Girls in STEM @LA County of Education</h3></div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2>Leadership Board</h2>
+        <h3>Asian & Pacific-Islander Student Alliance @UCSD</h3></div>
+      </div>
+      <div class="flex-item">
+        <div class="words"><h2>Mentor </h2>
+        <h3>Writing Center @UCSD</h3></div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="words"><h2>Tutor</h2>
+        <h3>Computer Science Department @UCSD</h3></div>
+      </div>
     </div>
 
   </body>
