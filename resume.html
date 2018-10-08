@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <style>
+      .mobile{
+        display:none !important;
+      }
       .resume{
         font-size: 40px;
         padding: 10px;
@@ -26,19 +29,24 @@
         padding-top: 20px;
         padding-bottom: 60px;
       }
+      table { 
+        border-collapse: collapse; 
+      }
+      tr{
+        border-bottom: 1pt solid grey;
+      }
+      td{
+        font-size: 20px;
+        padding:15px;
+      }
+      tr:last-child{
+        border-bottom: 0pt solid black;
+      }
       h3{
         color:grey;
       }
       .flex-item{
-        padding: 30px 0;
-        width: 47.5%;
-        height: 120px;
-        margin: 10px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: grey;
-        border-radius: 5px;
-        line-height: 160px;
+        width: 100%;
       }
       .flex-item:hover{
         cursor: auto !important;
@@ -53,10 +61,14 @@
         padding-right: 15px;
       }
       @media all and (max-width: 1121px) {
-        .flex-item{
-          padding: 20px 0;
-          width: 100%;
-          height: auto;
+        hr{
+          border-color:grey !important;
+        }
+        .web{
+          display: none !important;
+        }
+        .mobile{
+          display:inline-block !important;
         }
         .title{
           padding-bottom: 8px;
@@ -68,12 +80,18 @@
         h3{
         font-size: 3.6vw;
         }
+        .flex-item{
+          padding: 2px;
+        }
         .resume{
           font-size: 6vw;
-          /*max-width: 10px;*/
         }
         .resume_padding{
           padding-top: 0px;
+        }
+        td{
+          font-size: 15px !important;
+          padding:15px;
         }
       }
     </style>
@@ -93,72 +111,138 @@
     </div>
 
     <div class="title">Selected Experience </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2><nobr>UI & UX Designer</nobr>, <nobr>Front-End Developer</nobr></h2>
-        <h3>NASA - Jet Propulsion Laboratory</h3></div>
-      </div>
-      <div class="flex-item">
-        <div class="words"><h2>Freelance Graphic Designer</h2>
-        <h3>Dribbble</h3></div>
-      </div>
+    <div class="flex-container web">
+      <table style="width:100%">
+        <tr>
+          <td align="left"><nobr>UI & UX Designer</nobr>, <nobr>Front-End Developer</nobr></td>
+          <td align="right">NASA - Jet Propulsion Laboratory</td>
+        </tr>
+        <tr>
+          <td>Freelance Graphic Designer</td>
+          <td align="right">Dribbble</td>
+        </tr>
+        <tr>
+          <td>Freelance Digital Photographer</td>
+          <td align="right">Annie Chen Photography</td>
+        </tr>
+        <tr>
+          <td>UI Designer, Software Engineering Intern</td>
+          <td align="right">NASA - Jet Propulsion Laboratory</td> 
+        </tr>
+        <tr>
+          <td>Software Engineering Intern</td>
+          <td align="right">Teradata</td> 
+        </tr>
+        <tr>
+          <td><nobr>Web Developer</nobr>, <nobr>Marketing Assistant</nobr></td>
+          <td align="right">Global TIES @UCSD</td> 
+        </tr>
+      </table>
     </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2>Freelance Digital Photographer</h2>
-        <h3>Annie Chen Photography</h3></div>
+    <div class="mobile">
+      <br>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2><nobr>UI & UX Designer</nobr>, <nobr>Front-End Developer</nobr></h2>
+          <h3>NASA - Jet Propulsion Laboratory</h3></div><hr>
+        </div>
+        <div class="flex-item">
+          <div class="words"><h2>Freelance Graphic Designer</h2>
+          <h3>Dribbble</h3></div><hr>
+        </div>
       </div>
-      <div class="flex-item">
-        <div class="words"><h2>UI Designer, Software Engineering Intern</h2>
-        <h3>NASA - Jet Propulsion Laboratory</h3></div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>Freelance Digital Photographer</h2>
+          <h3>Annie Chen Photography</h3></div><hr>
+        </div>
+        <div class="flex-item">
+          <div class="words"><h2>UI Designer, Software Engineering Intern</h2>
+          <h3>NASA - Jet Propulsion Laboratory</h3></div><hr>
+        </div>
       </div>
-    </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2>Software Engineering Intern </h2>
-        <h3>Teradata</h3></div>
-      </div>
-      <div class="flex-item">
-        <div class="words"><h2><nobr>Web Developer</nobr>, <nobr>Marketing Assistant</nobr></h2>
-        <h3>Global TIES @UCSD</h3></div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>Software Engineering Intern </h2>
+          <h3>Teradata</h3></div><hr>
+        </div>
+        <div class="flex-item">
+          <div class="words"><h2><nobr>Web Developer</nobr>, <nobr>Marketing Assistant</nobr></h2>
+          <h3>Global TIES @UCSD</h3></div>
+        </div>
       </div>
     </div>
     <br><br>
     <div class="title">Leadership </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2>Leadership Board, <nobr>Co-Founder</nobr></h2>
-        <h3>Women Chat & Chew @NASA - Jet Propulsion Laboratory</h3></div>
-      </div>
-      <div class="flex-item">
-        <div class="words"><h2>UX Product Reviewer</h2>
-        <h3>UX Review Team @NASA - Jet Propulsion Laboratory</h3></div>
-      </div>
+    <div class="flex-container web">
+      <table style="width:100%">
+        <tr>
+          <td>Leadership Board, <nobr>Co-Founder</nobr></td>
+          <td align="right">Women Chat & Chew @NASA - Jet Propulsion Laboratory</h3></td> 
+        </tr>
+        <tr>
+          <td>UX Product Reviewer</td>
+          <td align="right">UX Review Team @NASA - Jet Propulsion Laboratory</td> 
+        </tr>
+        <tr>
+          <td>Panelist</td>
+          <td align="right">sheCodes @NASA - Jet Propulsion Laboratory</td> 
+        </tr>
+        <tr>
+          <td>STEM Ambassador</td>
+          <td align="right">Engaging Girls in STEM @LA County of Education</td> 
+        </tr>
+        <tr>
+          <td>Leadership Board</td>
+          <td align="right">Asian & Pacific-Islander Student Alliance @UCSD</td> 
+        </tr>
+        <tr>
+          <td>Mentor</td>
+          <td align="right">Writing Center @UCSD</td> 
+        </tr>
+        <tr>
+          <td>Tutor</td>
+          <td align="right">Computer Science Department @UCSD</td> 
+        </tr>
+      </table>
     </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2>Panelist</h2>
-        <h3>sheCodes @NASA - Jet Propulsion Laboratory</h3></div>
+    <div class="mobile">
+      <br>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>Leadership Board, <nobr>Co-Founder</nobr></h2>
+          <h3>Women Chat & Chew @NASA - Jet Propulsion Laboratory</h3></div><hr>
+        </div>
+        <div class="flex-item">
+          <div class="words"><h2>UX Product Reviewer</h2>
+          <h3>UX Review Team @NASA - Jet Propulsion Laboratory</h3></div><hr>
+        </div>
       </div>
-      <div class="flex-item">
-        <div class="words"><h2>STEM Ambassador</h2>
-        <h3>Engaging Girls in STEM @LA County of Education</h3></div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>Panelist</h2>
+          <h3>sheCodes @NASA - Jet Propulsion Laboratory</h3></div><hr>
+        </div>
+        <div class="flex-item">
+          <div class="words"><h2>STEM Ambassador</h2>
+          <h3>Engaging Girls in STEM @LA County of Education</h3></div><hr>
+        </div>
       </div>
-    </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2>Leadership Board</h2>
-        <h3>Asian & Pacific-Islander Student Alliance @UCSD</h3></div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>Leadership Board</h2>
+          <h3>Asian & Pacific-Islander Student Alliance @UCSD</h3></div><hr>
+        </div>
+        <div class="flex-item">
+          <div class="words"><h2>Mentor </h2>
+          <h3>Writing Center @UCSD</h3></div><hr>
+        </div>
       </div>
-      <div class="flex-item">
-        <div class="words"><h2>Mentor </h2>
-        <h3>Writing Center @UCSD</h3></div>
-      </div>
-    </div>
-    <div class="flex-container">
-      <div class="flex-item">
-        <div class="words"><h2>Tutor</h2>
-        <h3>Computer Science Department @UCSD</h3></div>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>Tutor</h2>
+          <h3>Computer Science Department @UCSD</h3></div>
+        </div>
       </div>
     </div>
 
