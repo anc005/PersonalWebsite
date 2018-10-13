@@ -59,6 +59,10 @@
         vertical-align: middle;
         line-height: normal;
       }
+      .educationDetail{
+        font-size: 15px;
+        color:grey;
+      }
       @media all and (max-width: 1121px) {
         hr{
           border-color:grey !important;
@@ -69,6 +73,7 @@
         }
         .mobile{
           display:inline-block !important;
+          padding: 9px;
         }
         .title{
           padding-bottom: 8px;
@@ -83,6 +88,7 @@
         }
         .flex-item{
           padding: 2px;
+          text-align: left;
         }
         .resume{
           font-size: 6vw;
@@ -94,6 +100,11 @@
           font-size: 15px !important;
           padding:15px;
         }
+        .educationDetail{
+          font-size: 3vw;
+          color:white;
+          font-weight:normal;
+        }
       }
     </style>
   </head>
@@ -103,13 +114,35 @@
     <a href="art.html">Art</a>
     <a href="code.html">Products</a>
     <span style="color:yellow; text-transform: uppercase; padding: 10px">Resume</span> 
-    <a href="contact.html">Contact</a>
+    <!-- <a href="contact.html">Contact</a> -->
   </header>
 
   <body>
     <div class="resume_padding">
       <center><a class="resume" href="Annie_Chen_Resume.pdf" target="_blank">Download Resume</a></center>
     </div>
+
+    <div class="title">Education</div>
+    <div class="flex-container web">
+      <table style="width:100%">
+          <tr>
+            <td align="left">B.S. Computer Science (Class of 2017)<br>
+              <span class="educationDetail">Area Studies: Cognitive Science (Human-Computer Interaction), Literature (Writing)</span>
+            </td>
+            <td align="right"><i>University of California, San Diego </i></td>
+          </tr>
+      </table>
+    </div>
+    <div class="mobile">
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="words"><h2>B.S. Computer Science (Class of 2017)<br>
+              <span class="educationDetail">Area Studies: Cognitive Science (Human-Computer Interaction), Literature (Writing)</span></h2>
+          <h3>University of California, San Diego</h3></div>
+        </div>
+    </div>
+  </div>
+    <br><br>
 
     <div class="title">Selected Experience </div>
     <div class="flex-container web">
@@ -141,7 +174,6 @@
       </table>
     </div>
     <div class="mobile">
-      <br>
       <div class="flex-container">
         <div class="flex-item">
           <div class="words"><h2><nobr>UI & UX Designer</nobr>, <nobr>Front-End Developer</nobr></h2>
@@ -208,7 +240,6 @@
       </table>
     </div>
     <div class="mobile">
-      <br>
       <div class="flex-container">
         <div class="flex-item">
           <div class="words"><h2>Leadership Board, <nobr>Co-Founder</nobr></h2>
@@ -250,6 +281,6 @@
   </body>
 
   <footer>
-    <i class="fa fa-copyright"></i> Annie Chen, 2018.
+    <i class="fa fa-copyright"></i> 2018, ANNIE CHEN<br>
   </footer>
 </html>
