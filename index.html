@@ -6,93 +6,73 @@
 	  	<link rel="stylesheet" type="text/css" href="./CSS/Style.css">
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	  	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
-	    <style>
-	      .subtitles{
-	      	font-size: 18px;
-	      	color: rgba(255, 255, 255, 0.5);
-	      }
-	      h1{
-	      	line-height: 2;
-	      }
-	      h2{
-	      	line-height: 0.5;
-	      }
-	      .aboutme{
-	      	width:500px;
-	      }
-	      .tag{
-	      	border-width: 1px;
-	      	border-style: solid;
-	      	border-color:grey;
-	      	border-radius: 5px;
-	      	padding: 2px;
-
-	      }
-	      img.me{
-	      	width: 95%;
-	      	height: auto;
-	      	max-width: 400px;
-	      }
-	      .me{
-	      	object-fit:cover;
-	      }
-	      @media all and (max-width: 900px) {
-		      h1{
-		      	line-height: normal;
-		      }
-		      h2{
-		      	line-height: normal;
-		      }
-		      .aboutme{
-
-		      	width: 90%;
-		      }
-	      }
-	    </style>
 	</head>
-
+	<style>
+		.flex-container{
+			max-width: 750px;
+		}
+		.flex-item{
+			width: 49.5%;
+		}
+		a.misc{
+			padding-left: 0px;
+			padding-bottom: 2px;
+		}
+		img.code_art{
+			width: calc(100% - 2px);
+			border: 1px solid grey;
+		}
+		@media all and (max-width: 900px) {
+			.flex-container{
+				max-width: 100%;
+			}
+			.flex-item{
+				width: 100%;
+			}
+			.artTitle{
+				font-size: 10vw;
+				margin-left: 0px;
+			}
+		}
+	</style>
 	<header>
 		<a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
 		<br>
-		<a href="art.html">Art</a> 
-		<a href="code.html">Products</a>  
-		<a href="resume.html">Resume</a>  
-		<!-- <a href="contact.html">Contact</a> -->
-		<br>
+		<div id="nav-main">
+			<span style="color:yellow; text-transform: uppercase; padding: 10px">Art</span>
+			<!-- <a href="code.html">Products</a>   -->
+			<a href="resume.html">Resume</a>  
+			<a href="contact.html">Contact</a>
+		</div>
+	    <br>
+    	<div id="nav-sub" style="color:grey">
+		    <a class="artSubtitle" href="photography.html">Photography</a> /
+		    <a class="artSubtitle" href="graphic_design.html">Graphic Design</a> /
+		    <a class="artSubtitle" href="illustrations.html">Illustration</a> /
+		    <a class="artSubtitle" href="code_art.html">Code</a>
+		</div>
 	</header>
 
 	<body>
-	  	<div class="container">
-	      	<img class="me" width="200" height="200" style="border-radius:50%" src="img/Annie.jpg"><br>
-			<h1>ANNIE CHEN</h1> 
-			<h2>Designing digital experiences for human needs.</h2>
-			<div class="subtitles">
-				UI & UX DESIGN · FRONT-END DEVELOPMENT · GRAPHIC DESIGN
-			</div>
+	    <div class="flex-container">
+	      <div class="flex-item"><a class="misc" href="photography.html">
+	      	<img src="img/chicago.jpg"></a>
+	      </div>
+	      <div class="flex-item"><a class="misc" href="graphic_design.html">
+	         <img src="graphic_design/elephant.png"></a>
+	      </div>
+	    </div>
 
-			<br>
-			<center>
-			<div class="aboutme">
-	<!-- 		<p>Persistently captivated by the intersection of art and technology, Annie holds a passion for creating intuitive, responsive <nobr>user-interfaces</nobr>. Coming from a background of Computer Science, Human-Computer Interaction, and Writing, she is <nobr>well-versed</nobr> in leading <nobr>thought-provoking</nobr> analysis on <nobr>User Experience</nobr> and <nobr>Interface Development</nobr>. Annie is experienced in leading teams and organizations of various sizes with a knack for kind, explicit clarity. </p> -->
-			</div><br>
-		<!-- 	<div class="subtitles">
-				<span class="tag">&nbsp;<i class="fa fa-briefcase fa-1x"></i> NASA JPL </span>&nbsp;
-				<span class="tag">&nbsp;<i class="fa fa-graduation-cap fa-1x"></i> UCSD </span>&nbsp;
-			</div>
-			<br><br> -->
-			<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
-			&nbsp;
-			<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
-			&nbsp;
-			<a href="mailto:anniechen310@gmail.com" target="_blank" ><i class="fa fa-envelope-square fa-2x"></i></a>
-			&nbsp;
-			<a href="https://twitter.com/anniechn" target="_blank" class="fa fa-twitter fa-2x"></a>
-			&nbsp;
-			<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> 
-		</center>
-		</div>
+	    <div class="flex-container">
+	      <div class="flex-item"><a class="misc" href="illustrations.html">
+	      	<img src="illustrations/female_head.jpg"/></a>
+	      </div>
+	      <div class="flex-item"><a class="misc" href="code_art.html">
+	      	<img class="code_art" src="code/lights.png"/></a>
+	      </div>
+	    </div>
 	</body>
-
+	<br>
 	<footer>
     	<i class="fa fa-copyright"></i> 2018, ANNIE CHEN<br>
 	</footer>

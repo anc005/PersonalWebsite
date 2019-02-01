@@ -9,7 +9,7 @@ img[data-src] {
   opacity: 0;
 }
 body{
-  background-color: black;
+  background-color: #0D1319;
   color: white;
   padding-left: 10%;
   padding-right: 10%;
@@ -60,7 +60,7 @@ img.width{
 }
 .title{
   font-family: 'Quicksand', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   padding-left: calc(50% - 550px);
   line-height: 2;
   text-transform: uppercase;
@@ -73,6 +73,12 @@ header > a:hover{
 }
 .artSubtitle:hover{
  text-decoration: line-through;
+}
+#nav-sub{
+  font-size: 12px;
+}
+#nav-main{
+  font-weight: 1000;
 }
 /***************Contact / Home *********************/
 .container{
