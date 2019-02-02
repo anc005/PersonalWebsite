@@ -69,7 +69,7 @@ img.width{
   text-transform: uppercase;
   word-wrap:break-word;
   width: 200px;
-  text-align: center;
+  text-align: left;
 }
 header > a:hover{
  text-decoration: line-through;
