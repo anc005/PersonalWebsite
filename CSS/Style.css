@@ -70,6 +70,7 @@ img.width{
   word-wrap:break-word;
   width: 200px;
   text-align: left;
+  line-height: 1;
 }
 header > a:hover{
  text-decoration: line-through;
