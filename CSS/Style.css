@@ -130,9 +130,10 @@ iframe{
     }
     .title{
       font-size: 8vw;
-      padding-left: 10px;
-      line-height: normal;
-      width: 80%;
+      margin-left: 3px;
+      line-height: 2;
+      width: 100%;
+      text-align: left;
     }
     iframe{
       margin-left: 5%;
