@@ -6,73 +6,111 @@
 	  	<link rel="stylesheet" type="text/css" href="./CSS/Style.css">
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	  	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	    <style>
+	      .subtitles{
+	      	font-size: 18px;
+	      	color: rgba(255, 255, 255, 0.5);
+	      }
+	      .contactInfo{
+	      	width: 40%;
+	      	font-size: 17px;
+	      }
+	      .aboutme{
+	      	width:500px;
+	      }
+	      .tag{
+	      	border-width: 0px;
+	      	border-style: solid;
+	      	/*border-color:rgba(255,255,255,0.15);*/
+	      	border-radius: 5px;
+	      	padding: 3px;
+	      	color:cyan;
+	      	background-color: rgba(255,255,255,0.1);
+	      }
+	      img.me{
+	      	width: 100%;
+	      	height: auto;
+  			box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+	      }
+		  .flex-item {
+		    width: 32%;
+		    box-shadow: none;
+		  }
+		  .flex-item:hover{
+			opacity:1;
+			cursor: default;
+		  } 
+		  .flex-container{
+		  	padding-top:30px;
+		  	padding-bottom: 30px;
+		  }
+		  #unicorn{
+		    background: cyan;
+		    background: -webkit-linear-gradient(left, orange , yellow, lime, cyan, violet);
+		    background: -o-linear-gradient(right, orange, yellow, lime, cyan, violet);
+		    background: -moz-linear-gradient(right, orange, yellow, lime, cyan, violet);
+		    background: linear-gradient(to right, orange , yellow, lime, cyan, violet);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    font-weight: 1000;
+		  }
+	      @media all and (max-width: 900px) {
+		      .contactInfo{
+		      	width:100%;
+		      	padding:10px;
+		      	padding-top: 20px;
+		      }
+		      .flex-container{
+			  	padding: auto;
+			  }
+			  .flex-item{
+			  	width: 80%;
+			  }
+
+	      }
+	    </style>
 	</head>
-	<style>
-		.flex-container{
-			max-width: 750px;
-		}
-		.flex-item{
-			width: 49.5%;
-		}
-		a.misc{
-			padding-left: 0px;
-			padding-bottom: 2px;
-		}
-		img.code_art{
-			width: calc(100% - 2px);
-			border: 1px solid grey;
-		}
-		@media all and (max-width: 900px) {
-			.flex-container{
-				max-width: 100%;
-			}
-			.flex-item{
-				width: 100%;
-			}
-			.artTitle{
-				font-size: 10vw;
-				margin-left: 0px;
-			}
-		}
-	</style>
+
 	<header>
 		<a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
 		<br>
 		<div id="nav-main">
-			<span style="color:cyan; text-transform: uppercase; padding: 10px">Art</span>
-			<!-- <a href="code.html">Products</a>   -->
+			<a href="photography.html">Art</a> 
 			<a href="resume.html">Resume</a>  
-			<a href="contact.html">Contact</a>
+			<span style="color:#4afff1; text-transform: uppercase; padding: 10px">Contact</span>
 		</div>
-	    <br>
-    	<div id="nav-sub" style="color:grey">
-		    <a class="artSubtitle" href="photography.html">Photography</a> /
-		    <a class="artSubtitle" href="graphic_design.html">Graphic Design</a> /
-		    <a class="artSubtitle" href="code_art.html">Code</a> /
-		    <a class="artSubtitle" href="illustrations.html">Misc</a> 
-		</div>
+		<br>
 	</header>
 
 	<body>
 	    <div class="flex-container">
-	      <div class="flex-item"><a class="misc" href="photography.html">
-	      	<img src="img/chicago.jpg"></a>
+	      <div class="flex-item">
+	        <img class="me" src="img/Annie.jpg">
 	      </div>
-	      <div class="flex-item"><a class="misc" href="graphic_design.html">
-	         <img src="graphic_design/Elephant.png"></a>
-	      </div>
-	    </div>
-
-	    <div class="flex-container">
-	      <div class="flex-item"><a class="misc" href="illustrations.html">
-	      	<img src="illustrations/female_head.jpg"/></a>
-	      </div>
-	      <div class="flex-item"><a class="misc" href="code_art.html">
-	      	<img class="code_art" src="code/lights.png"/></a>
+	      <div class="contactInfo">
+	      	Hey there! I'm a <span id="unicorn">designer/front-end developer</span> currently at NASA's Jet Propulsion Laboratory.
+	      	<br><br>
+	      	In my leisure, you can find me shooting <span style="color:cyan">digital photography</span> and creating <span style="color:cyan">graphic designs</span>.
+	      	<br><br>
+	      	Let's connect!<br><br>
+	        <!-- <h2>Designing digital experiences for human needs.</h2> -->
+	<!-- 			<div class="subtitles">
+					· UI & UX DESIGN <br>· FRONT-END DEVELOPMENT <br>· GRAPHIC DESIGN
+				</div> -->	
+				
+				<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
+				&nbsp;
+				<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
+				&nbsp;
+				<a href="mailto:anniechen310@gmail.com" target="_blank" ><i class="fa fa-envelope-square fa-2x"></i></a>
+				&nbsp;
+				<a href="https://twitter.com/anniechn" target="_blank" class="fa fa-twitter fa-2x"></a>
+				&nbsp;
+				<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> 
 	      </div>
 	    </div>
 	</body>
-	<br>
+
 	<footer>
     	<i class="fa fa-copyright"></i> 2019, ANNIE CHEN<br>
 	</footer>

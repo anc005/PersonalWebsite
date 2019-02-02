@@ -11,14 +11,9 @@
 	      	font-size: 18px;
 	      	color: rgba(255, 255, 255, 0.5);
 	      }
-	      h1{
-	      	line-height: 2;
-	      }
-	      h2{
-	      	line-height: 0.5;
-	      }
 	      .contactInfo{
 	      	width: 40%;
+	      	font-size: 17px;
 	      }
 	      .aboutme{
 	      	width:500px;
@@ -33,13 +28,9 @@
 	      	background-color: rgba(255,255,255,0.1);
 	      }
 	      img.me{
-	      	width: 90%;
+	      	width: 100%;
 	      	height: auto;
-	      	max-width: 350px;
   			box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
-	      }
-	      .me{
-	      	object-fit:cover;
 	      }
 		  .flex-item {
 		    width: 32%;
@@ -49,9 +40,10 @@
 			opacity:1;
 			cursor: default;
 		  } 
-		  mark{
-			background-color: cyan;
-	      }
+		  .flex-container{
+		  	padding-top:30px;
+		  	padding-bottom: 30px;
+		  }
 		  #unicorn{
 		    background: cyan;
 		    background: -webkit-linear-gradient(left, orange , yellow, lime, cyan, violet);
@@ -63,15 +55,18 @@
 		    font-weight: 1000;
 		  }
 	      @media all and (max-width: 900px) {
-		      h1{
-		      	line-height: normal;
+		      .contactInfo{
+		      	width:100%;
+		      	padding:10px;
+		      	padding-top: 20px;
 		      }
-		      h2{
-		      	line-height: normal;
-		      }
-		      .aboutme{
-		      	width: 90%;
-		      }
+		      .flex-container{
+			  	padding: auto;
+			  }
+			  .flex-item{
+			  	width: 80%;
+			  }
+
 	      }
 	    </style>
 	</head>
@@ -80,7 +75,7 @@
 		<a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
 		<br>
 		<div id="nav-main">
-			<a href="art.html">Art</a> 
+			<a href="photography.html">Art</a> 
 			<a href="resume.html">Resume</a>  
 			<span style="color:#4afff1; text-transform: uppercase; padding: 10px">Contact</span>
 		</div>
@@ -88,57 +83,32 @@
 	</header>
 
 	<body>
-
-    <div class="flex-container">
-      <div class="flex-item">
-        <img class="me" src="img/Annie.jpg">
-      </div>
-      <div class="contactInfo">
-      	Hey there! I am <span id="unicorn">designer/front-end developer</span> currently working at NASA's Jet Propulsion Laboratory.
-      	<br>
-
-        <!-- <h2>Designing digital experiences for human needs.</h2> -->
-<!-- 			<div class="subtitles">
-				· UI & UX DESIGN <br>· FRONT-END DEVELOPMENT <br>· GRAPHIC DESIGN
-			</div> -->	
-			<center>
-			
-			<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
-			&nbsp;
-			<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
-			&nbsp;
-			<a href="mailto:anniechen310@gmail.com" target="_blank" ><i class="fa fa-envelope-square fa-2x"></i></a>
-			&nbsp;
-			<a href="https://twitter.com/anniechn" target="_blank" class="fa fa-twitter fa-2x"></a>
-			&nbsp;
-			<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> </center>
-      </div>
-    </div>
-
-<!-- 
-	  	<div class="web container">
-	      	<img class="me" width="200" height="200" style="border-radius:50%" src="img/Annie.jpg"><br>
-			<h1>ANNIE CHEN</h1> 
-			<h2>Designing digital experiences for human needs.</h2>
-			<div class="subtitles">
-				UI & UX DESIGN · FRONT-END DEVELOPMENT · GRAPHIC DESIGN
-			</div>
-
-			<br>
-			<center>
-			<div class="aboutme">
-			</div><br>
-			<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
-			&nbsp;
-			<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
-			&nbsp;
-			<a href="mailto:anniechen310@gmail.com" target="_blank" ><i class="fa fa-envelope-square fa-2x"></i></a>
-			&nbsp;
-			<a href="https://twitter.com/anniechn" target="_blank" class="fa fa-twitter fa-2x"></a>
-			&nbsp;
-			<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> 
-		</center>
-		</div> -->
+	    <div class="flex-container">
+	      <div class="flex-item">
+	        <img class="me" src="img/Annie.jpg">
+	      </div>
+	      <div class="contactInfo">
+	      	Hey there! I'm a <span id="unicorn">designer/front-end developer</span> currently at NASA's Jet Propulsion Laboratory.
+	      	<br><br>
+	      	In my leisure, you can find me shooting <span style="color:cyan">digital photography</span> and creating <span style="color:cyan">graphic designs</span>.
+	      	<br><br>
+	      	Let's connect!<br><br>
+	        <!-- <h2>Designing digital experiences for human needs.</h2> -->
+	<!-- 			<div class="subtitles">
+					· UI & UX DESIGN <br>· FRONT-END DEVELOPMENT <br>· GRAPHIC DESIGN
+				</div> -->	
+				
+				<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
+				&nbsp;
+				<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
+				&nbsp;
+				<a href="mailto:anniechen310@gmail.com" target="_blank" ><i class="fa fa-envelope-square fa-2x"></i></a>
+				&nbsp;
+				<a href="https://twitter.com/anniechn" target="_blank" class="fa fa-twitter fa-2x"></a>
+				&nbsp;
+				<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> 
+	      </div>
+	    </div>
 	</body>
 
 	<footer>
