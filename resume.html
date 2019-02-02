@@ -11,35 +11,37 @@
         display:none !important;
       }
       .resume{
-        font-size: 40px;
+        font-size: 20px;
         padding: 10px;
         padding-left: 15px;
         padding-right: 15px;
         border-style: solid;
         border-width: 1px;
         border-radius: 5px;
-        background-color: white;
-        color: black;
+        border-color: rgba(255,255,255,0.2);
+        /*box-shadow: 0px 0px 2px 1px rgba(255,255,255,0.2);*/
+        /*background-color: white;*/
+        /*color: black;*/
+        background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.03));
+
       }
       .resume:hover{
-        background-color: orange;
-        color: black;
+        background-color:white;
+        color: #0D1319;
       }
       .resume_padding{
         padding-top: 20px;
         padding-bottom: 60px;
       }
-      .flex-container, .web{
-        /*background-color: rgba(255,255,255,0.15);*/
+      .web{
         background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.03));
         border-style: solid;
         border-width: 0;
         border-radius:5px;
-        padding-left: 15px;
-        padding-right: 15px;
+        /*padding-left: 15px;*/
+        /*padding-right: 15px;*/
         padding-top:11px;
         padding-bottom:11px;
-        /*box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.2);*/
       }
       table { 
         border-collapse: collapse; 
@@ -58,8 +60,14 @@
         /*color:grey;*/
         font-style: italic;
       }
+      .flex-container{
+        padding:0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
       .flex-item{
         width: 100%;
+        box-shadow: none;
       }
       .flex-item:hover{
         cursor: auto !important;
@@ -75,9 +83,13 @@
         font-size: 15px;
         color:grey;
       }
-      @media all and (max-width: 1121px) {
+      .title{
+        width: auto;
+        text-align: left;
+      }
+      @media all and (max-width: 900px) {
         hr{
-          border-color:grey !important;
+          border-color:rgba(0,0,0,0.5) !important;
           width: 100% !important;
         }
         .web{
@@ -85,22 +97,37 @@
         }
         .mobile{
           display:inline-block !important;
-          padding: 9px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .mobile{
+          background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.03));
+          border-style: solid;
+          border-width: 0;
+          border-radius:5px;
+          /*padding-left: 15px;*/
+          /*padding-right: 15px;*/
+          padding-top:6px;
+          padding-bottom:6px;
         }
         .title{
           padding-bottom: 8px;
-          margin-left: 0% !important;
+          /*margin-left: 0% !important;*/
         }
         h2{
           font-size: 4vw;
         }
         h3{
-        font-size: 3.6vw;
-        color:grey;
+          font-size: 2.8vw;
+          color:grey;
         }
         .flex-item{
-          padding: 2px;
+          padding: 0px;
           text-align: left;
+        }
+        .flex-container{
+          background-image: none;
+          padding: 0px;
         }
         .resume{
           font-size: 6vw;
@@ -126,7 +153,7 @@
     <div id="nav-main">
       <a href="art.html">Art</a>
       <!-- <a href="code.html">Products</a> -->
-      <span style="color:yellow; text-transform: uppercase; padding: 10px">Resume</span> 
+      <span style="color:#4afff1; text-transform: uppercase; padding: 10px">Resume</span> 
       <a href="contact.html">Contact</a>
     </div>
   </header>
@@ -138,7 +165,7 @@
 
     <div class="title">Education</div>
     <div class="flex-container web">
-      <table style="width:100%">
+      <table style="width:calc(100% - 30px)">
           <tr>
             <td align="left">B.S. Computer Science (Class of 2017)<br>
               <span class="educationDetail">Area Studies: Cognitive Science (Human-Computer Interaction), Literature (Writing)</span>
@@ -160,7 +187,7 @@
 
     <div class="title">Selected Experience </div>
     <div class="flex-container web">
-      <table style="width:100%">
+      <table style="width:calc(100% - 30px)">
         <tr>
           <td align="left"><nobr>UI & UX Designer</nobr>, <nobr>Front-End Developer</nobr></td>
           <td align="right"><i>NASA - Jet Propulsion Laboratory</i></td>
@@ -222,7 +249,7 @@
     <br><br>
     <div class="title">Leadership </div>
     <div class="flex-container web">
-      <table style="width:100%">
+      <table style="width:calc(100% - 30px)">
         <tr>
           <td>Leadership Board, <nobr>Co-Founder</nobr></td>
           <td align="right"><i>Women Chat & Chew @NASA - Jet Propulsion Laboratory</i></td> 
@@ -295,6 +322,6 @@
   </body>
 
   <footer>
-    <i class="fa fa-copyright"></i> 2018, ANNIE CHEN<br>
+    <i class="fa fa-copyright"></i> 2019, ANNIE CHEN<br>
   </footer>
 </html>

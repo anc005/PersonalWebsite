@@ -8,17 +8,45 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <style>
       .container{
+          background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.03));
+          border-style: solid;
+          border-width: 0;
+          border-radius:5px;
+          /*padding: 20px;*/
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1000px;
+          padding: 15px;
+      }
+      .flex-item {
         width: 70%;
-        margin-left: 4.5%;
+        box-shadow: none;
+      }
+      .flex-item:hover{
+        opacity:1;
+        cursor: default;
+      }
+      iframe{
+        margin:0;
+        height: 500px;
       }
       .work{
         text-align: left;
         margin-left: 20%;
       }
+      .title{
+        width: 300px;
+      }
       @media all and (max-width: 900px) {
+        .title{
+          width: 100%;
+        }
         .container{
           width: 100%;
           margin-left: -5%;
+        }
+        .flex-item{
+          width: 100%;
         }
       }
     </style>
@@ -27,7 +55,7 @@
     <a href="index.html"><img class="logo" src="img/Annie_Logo.png"></a>
     <br>
     <div id="nav-main">
-      <a style="color:yellow;" href="art.html">Art</a>  
+      <a style="color:#4afff1;" href="art.html">Art</a>  
       <!-- <a href="code.html">Products</a>   -->
       <a href="resume.html">Resume</a>  
       <a href="contact.html">Contact</a>
@@ -36,30 +64,42 @@
     <div  id="nav-sub" style="color:grey">
       <a class="artSubtitle" href="photography.html">Photography</a> / 
       <a class="artSubtitle" href="graphic_design.html">Graphic Design</a> /
-      <a class="artSubtitle" href="illustrations.html">Illustration</a> /
-      <span style="color:orange; text-transform: uppercase; padding: 10px">Code</span>  
+      <span style="color:white; text-transform: uppercase; padding: 10px">Code</span> /
+      <a class="artSubtitle" href="illustrations.html">Misc</a> 
     </div>
   </header>
 
   <body>
 
-    <div class="title">CodePen </div>
-    <div class="container">
-      <p data-theme-id="dark" data-slug-hash="EZrpBb" data-default-tab="result" data-user="AnnieChn" data-pen-title="Responsive Colorful Lights" class="codepen">See the Pen <a href="https://codepen.io/AnnieChn/pen/EZrpBb/">Responsive Colorful Lights</a> by Annie Chen (<a href="https://codepen.io/AnnieChn">@AnnieChn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      <br>
-
-      <p data-theme-id="dark" data-slug-hash="JEQXyB" data-default-tab="result" data-user="AnnieChn" data-pen-title="SVG Morph Animation: Which Came First?" class="codepen">See the Pen <a href="https://codepen.io/AnnieChn/pen/JEQXyB/">SVG Morph Animation: Which Came First?</a> by Annie Chen (<a href="https://codepen.io/AnnieChn">@AnnieChn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      <br>
-
-      <p data-theme-id="dark" data-slug-hash="jBrwLx" data-default-tab="result" data-user="AnnieChn" data-pen-title="jQuery Hover to Chase Love" class="codepen">See the Pen <a href="https://codepen.io/AnnieChn/pen/jBrwLx/">jQuery Hover to Chase Love</a> by Annie Chen (<a href="https://codepen.io/AnnieChn">@AnnieChn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    <!-- <div class="title">CodePen </div> -->
+    <div class="flex-container">
+      <div class="title">Responsive Colors</div>
+      <div class="flex-item">
+        <p data-theme-id="dark" data-slug-hash="EZrpBb" data-default-tab="result" data-user="AnnieChn" data-pen-title="Responsive Colorful Lights" class="codepen">See the Pen <a href="https://codepen.io/AnnieChn/pen/EZrpBb/">Responsive Colorful Lights</a> by Annie Chen (<a href="https://codepen.io/AnnieChn">@AnnieChn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
     </div>
+      <br>
+    <div class="flex-container">
+      <div class="title">SVG Morph</div>
+      <div class="flex-item">
+        <p data-theme-id="dark" data-slug-hash="JEQXyB" data-default-tab="result" data-user="AnnieChn" data-pen-title="SVG Morph Animation: Which Came First?" class="codepen">See the Pen <a href="https://codepen.io/AnnieChn/pen/JEQXyB/">SVG Morph Animation: Which Came First?</a> by Annie Chen (<a href="https://codepen.io/AnnieChn">@AnnieChn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </div>
+      <br>
+    <div class="flex-container">
+      <div class="title">jQuery Hover</div>
+      <div class="flex-item">
+        <p data-theme-id="dark" data-slug-hash="jBrwLx" data-default-tab="result" data-user="AnnieChn" data-pen-title="jQuery Hover to Chase Love" class="codepen">See the Pen <a href="https://codepen.io/AnnieChn/pen/jBrwLx/">jQuery Hover to Chase Love</a> by Annie Chen (<a href="https://codepen.io/AnnieChn">@AnnieChn</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </div>
+  </div>
 
   </body>
 
   <footer>
-    <i class="fa fa-copyright"></i> 2018, ANNIE CHEN<br>
+    <i class="fa fa-copyright"></i> 2019, ANNIE CHEN<br>
   </footer>
 </html>

@@ -17,25 +17,51 @@
 	      h2{
 	      	line-height: 0.5;
 	      }
+	      .contactInfo{
+	      	width: 40%;
+	      }
 	      .aboutme{
 	      	width:500px;
 	      }
 	      .tag{
-	      	border-width: 1px;
+	      	border-width: 0px;
 	      	border-style: solid;
-	      	border-color:grey;
+	      	/*border-color:rgba(255,255,255,0.15);*/
 	      	border-radius: 5px;
-	      	padding: 2px;
-
+	      	padding: 3px;
+	      	color:cyan;
+	      	background-color: rgba(255,255,255,0.1);
 	      }
 	      img.me{
-	      	width: 95%;
+	      	width: 90%;
 	      	height: auto;
-	      	max-width: 400px;
+	      	max-width: 350px;
+  			box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
 	      }
 	      .me{
 	      	object-fit:cover;
 	      }
+		  .flex-item {
+		    width: 32%;
+		    box-shadow: none;
+		  }
+		  .flex-item:hover{
+			opacity:1;
+			cursor: default;
+		  } 
+		  mark{
+			background-color: cyan;
+	      }
+		  #unicorn{
+		    background: cyan;
+		    background: -webkit-linear-gradient(left, orange , yellow, lime, cyan, violet);
+		    background: -o-linear-gradient(right, orange, yellow, lime, cyan, violet);
+		    background: -moz-linear-gradient(right, orange, yellow, lime, cyan, violet);
+		    background: linear-gradient(to right, orange , yellow, lime, cyan, violet);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    font-weight: 1000;
+		  }
 	      @media all and (max-width: 900px) {
 		      h1{
 		      	line-height: normal;
@@ -44,7 +70,6 @@
 		      	line-height: normal;
 		      }
 		      .aboutme{
-
 		      	width: 90%;
 		      }
 	      }
@@ -56,15 +81,42 @@
 		<br>
 		<div id="nav-main">
 			<a href="art.html">Art</a> 
-	<!-- 		<a href="code.html">Products</a>  
-	 -->		<a href="resume.html">Resume</a>  
-			<span style="color:yellow; text-transform: uppercase; padding: 10px">Contact</span>
+			<a href="resume.html">Resume</a>  
+			<span style="color:#4afff1; text-transform: uppercase; padding: 10px">Contact</span>
 		</div>
 		<br>
 	</header>
 
 	<body>
-	  	<div class="container">
+
+    <div class="flex-container">
+      <div class="flex-item">
+        <img class="me" src="img/Annie.jpg">
+      </div>
+      <div class="contactInfo">
+      	Hey there! I am <span id="unicorn">designer/front-end developer</span> currently working at NASA's Jet Propulsion Laboratory.
+      	<br>
+
+        <!-- <h2>Designing digital experiences for human needs.</h2> -->
+<!-- 			<div class="subtitles">
+				· UI & UX DESIGN <br>· FRONT-END DEVELOPMENT <br>· GRAPHIC DESIGN
+			</div> -->	
+			<center>
+			
+			<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
+			&nbsp;
+			<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
+			&nbsp;
+			<a href="mailto:anniechen310@gmail.com" target="_blank" ><i class="fa fa-envelope-square fa-2x"></i></a>
+			&nbsp;
+			<a href="https://twitter.com/anniechn" target="_blank" class="fa fa-twitter fa-2x"></a>
+			&nbsp;
+			<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> </center>
+      </div>
+    </div>
+
+<!-- 
+	  	<div class="web container">
 	      	<img class="me" width="200" height="200" style="border-radius:50%" src="img/Annie.jpg"><br>
 			<h1>ANNIE CHEN</h1> 
 			<h2>Designing digital experiences for human needs.</h2>
@@ -75,13 +127,7 @@
 			<br>
 			<center>
 			<div class="aboutme">
-	<!-- 		<p>Persistently captivated by the intersection of art and technology, Annie holds a passion for creating intuitive, responsive <nobr>user-interfaces</nobr>. Coming from a background of Computer Science, Human-Computer Interaction, and Writing, she is <nobr>well-versed</nobr> in leading <nobr>thought-provoking</nobr> analysis on <nobr>User Experience</nobr> and <nobr>Interface Development</nobr>. Annie is experienced in leading teams and organizations of various sizes with a knack for kind, explicit clarity. </p> -->
 			</div><br>
-		<!-- 	<div class="subtitles">
-				<span class="tag">&nbsp;<i class="fa fa-briefcase fa-1x"></i> NASA JPL </span>&nbsp;
-				<span class="tag">&nbsp;<i class="fa fa-graduation-cap fa-1x"></i> UCSD </span>&nbsp;
-			</div>
-			<br><br> -->
 			<a href="https://www.linkedin.com/in/anniechn" target="_blank" class="fa fa-linkedin-square fa-2x"></a> 
 			&nbsp;
 			<a href="https://dribbble.com/anniechn" target="_blank" class="fa fa-dribbble fa-2x"></a> 
@@ -92,11 +138,11 @@
 			&nbsp;
 			<a href="https://medium.com/@anniechn" target="_blank" class="fa fa-medium fa-2x"></a> 
 		</center>
-		</div>
+		</div> -->
 	</body>
 
 	<footer>
-    	<i class="fa fa-copyright"></i> 2018, ANNIE CHEN<br>
+    	<i class="fa fa-copyright"></i> 2019, ANNIE CHEN<br>
 	</footer>
 
 </html>
